@@ -1,0 +1,313 @@
+@prefix : <http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews> .
+
+<http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Content ;
+           rdfs:range :Contributor .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#hasEdition
+:hasEdition rdf:type owl:ObjectProperty ;
+            rdfs:domain :Section ;
+            rdfs:range :Edition .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#hasSection
+:hasSection rdf:type owl:ObjectProperty ;
+            rdfs:domain :Content ;
+            rdfs:range :Section .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:domain :Tag ;
+         rdfs:range :TagType .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#hasUrl
+:hasUrl rdf:type owl:ObjectProperty ;
+        rdfs:domain :Endpoint ;
+        rdfs:range :Url .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#author
+:author rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Contributor ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#blogName
+:blogName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Blog ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#code
+:code rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Section ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The code of the edition" .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#contentId
+:contentId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Content ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#editionId
+:editionId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Edition ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The list of existing editions for this section" .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#editionName
+:editionName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Edition ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#keyword
+:keyword rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Keyword ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#mediaType
+:mediaType rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Type ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#path
+:path rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Edition ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#serie
+:serie rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Series ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#tagId
+:tagId rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Tag ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Url ;
+     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#webPublicationDate
+:webPublicationDate rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Content ;
+                    rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#webTitle
+:webTitle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Edition ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The title displayed on the web" .
+
+
+###  https://schema.org/sectionId
+<https://schema.org/sectionId> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :Section ;
+                               rdfs:range xsd:string .
+
+
+###  https://schema.org/sectionName
+<https://schema.org/sectionName> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :Section ;
+                                 rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#ApiUrl
+:ApiUrl rdf:type owl:Class ;
+        rdfs:subClassOf :Url ;
+        rdfs:comment "The URL of the raw content" .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Blog
+:Blog rdf:type owl:Class ;
+      rdfs:subClassOf :TagType ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :blogName ;
+                        owl:someValuesFrom xsd:string
+                      ] ;
+      rdfs:comment "the name of one of the Guardian's blog" .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Content
+:Content rdf:type owl:Class ;
+         rdfs:subClassOf :Endpoint ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :webPublicationDate ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :contentId ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Contributor
+:Contributor rdf:type owl:Class ;
+             rdfs:subClassOf :TagType ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :author ;
+                               owl:someValuesFrom xsd:string
+                             ] ;
+             rdfs:comment "the author of a content item" .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Edition
+:Edition rdf:type owl:Class ;
+         rdfs:subClassOf :Endpoint ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :editionName ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :path ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :webTitle ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :editionId ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Endpoint
+:Endpoint rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Keyword
+:Keyword rdf:type owl:Class ;
+         rdfs:subClassOf :TagType ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :keyword ;
+                           owl:someValuesFrom xsd:string
+                         ] ;
+         rdfs:comment "a word describing what this piece of content is about" .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Section
+:Section rdf:type owl:Class ;
+         rdfs:subClassOf :Endpoint ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :code ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://schema.org/sectionName> ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://schema.org/sectionId> ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Series
+:Series rdf:type owl:Class ;
+        rdfs:subClassOf :TagType ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :serie ;
+                          owl:someValuesFrom xsd:string
+                        ] ;
+        rdfs:comment "the name of a regularly produced content feature, such as podcasts or columns" .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#SingleItem
+:SingleItem rdf:type owl:Class ;
+            rdfs:subClassOf :Endpoint .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Tag
+:Tag rdf:type owl:Class ;
+     rdfs:subClassOf :Endpoint ,
+                     [ owl:intersectionOf ( :Endpoint
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasType ;
+                                              owl:someValuesFrom :TagType
+                                            ]
+                                          ) ;
+                       rdf:type owl:Class
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :tagId ;
+                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onDataRange xsd:string
+                     ] .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#TagType
+:TagType rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Tone
+:Tone rdf:type owl:Class ;
+      rdfs:subClassOf :TagType ;
+      rdfs:comment "the intent of the content, such as feature or obituary" .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Type
+:Type rdf:type owl:Class ;
+      rdfs:subClassOf :TagType ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :mediaType ;
+                        owl:someValuesFrom xsd:string
+                      ] ;
+      rdfs:comment "the media type, such as article, poll, video, etc" .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#Url
+:Url rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :url ;
+                       owl:someValuesFrom xsd:string
+                     ] .
+
+
+###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#WebUrl
+:WebUrl rdf:type owl:Class ;
+        rdfs:subClassOf :Url ;
+        rdfs:comment "The URL of the html content" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,957 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#"
+     xml:base="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasDiagnosis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasDiagnosis">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Diagnosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasGender">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/GenderType"/>
+        <rdfs:comment>Gender of a Person</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/MedicalClinic"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasNationality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasNationality">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasStatistics -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasStatistics">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/statisticsOf"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+        <rdfs:comment>A place is part of another place.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyleOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/statisticsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/statisticsOf">
+        <rdfs:comment>Statistics belonging to a Place, inverse of hasStatistics predicate</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/weatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/weatherOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/WeatherStatistics"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/adult_female_mortality_rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/adult_female_mortality_rate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyles_info"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/adult_male_mortality_rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/adult_male_mortality_rate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyles_info"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Aggregation level associated to statistics (0,1,2,3)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/avg_temp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/avg_temp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/meteorological_info"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/code">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/comorbidity_mortality_rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/comorbidity_mortality_rate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyles_info"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/current_hospitalized -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/current_hospitalized">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/current_intensiveCare -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/current_intensiveCare">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/current_ventilator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/current_ventilator">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Statistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/female_population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/female_population">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/population"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hospital_beds -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hospital_beds">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/humidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/humidity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/meteorological_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/infant_mortality_rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/infant_mortality_rate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyles_info"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/latitude">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/life_expectancy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/life_expectancy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyles_info"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyles_info -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyles_info">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/longitude">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/male_population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/male_population">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/population"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/max_temp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/max_temp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/meteorological_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/meteorological_info -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/meteorological_info">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/WeatherStatistics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/min_temp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/min_temp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/meteorological_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/name">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of a place</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_confirmed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_confirmed">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_deceased -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_deceased">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_hospitalized -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_hospitalized">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_intensiveCare -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_intensiveCare">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_recovered -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_recovered">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_tested -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_tested">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_ventilator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_ventilator">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/pollution_mortality_rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/pollution_mortality_rate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/lifestyles_info"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/population">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/population_density -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/population_density">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/population"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/rainfall -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/rainfall">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/meteorological_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/resource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/resource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_confirmed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_confirmed">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_deceased -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_deceased">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_hospitalized -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_hospitalized">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_intensiveCare -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_intensiveCare">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_recovered -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_recovered">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_tested -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_tested">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/cases"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_ventilator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_ventilator">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/patient_status -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/patient_status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The current status of the patient, for example: recovered, hospitalized, deceased.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Country">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CountryStatistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CountryStatistics">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Statistics"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/current_hospitalized"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/current_intensiveCare"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_confirmed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_deceased"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_hospitalized"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_intensiveCare"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_recovered"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/new_tested"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/population"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/resource"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_confirmed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_deceased"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_hospitalized"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_intensiveCare"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_recovered"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/total_tested"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Diagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Diagnosis">
+        <rdfs:comment>COVID-19 Diagnosis</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LifestyleStatistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Locality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Locality">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LocalityStatistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LocalityStatistics">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Man">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasGender"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#Male"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/MedicalClinic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/MedicalClinic">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Any organization that deals with covid patients,e.g, facility, hospitals, health care,...</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Patient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasDiagnosis"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Diagnosis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasNationality"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://schema.org/patient_status"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Province -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Province">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion2"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/ProvinceStatistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/ProvinceStatistics">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Region">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion1"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/RegionStatistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/RegionStatistics">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Statistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Statistics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion1">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion2">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/WeatherStatistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/WeatherStatistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Woman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Woman">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/hasGender"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#Female"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:comment>A human being</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/GenderType -->
+
+    <owl:Class rdf:about="https://schema.org/GenderType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#Female"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#Male"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Place -->
+
+    <owl:Class rdf:about="https://schema.org/Place">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/name"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/code"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#Female"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#Male"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

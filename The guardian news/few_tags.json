@@ -1,0 +1,78 @@
+{
+    "response": {
+        "status": "ok",
+        "userTier": "developer",
+        "total": 63198,
+        "startIndex": 1,
+        "pageSize": 10,
+        "currentPage": 1,
+        "pages": 6320,
+        "results": [
+            {
+                "id": "2019-family-gift-guide/2019-family-gift-guide",
+                "type": "paid-content",
+                "webTitle": "2019 family gift guide",
+                "webUrl": "https://www.theguardian.com/2019-family-gift-guide/2019-family-gift-guide",
+                "apiUrl": "https://content.guardianapis.com/2019-family-gift-guide/2019-family-gift-guide",
+                "activeSponsorships": [
+                    {
+                        "sponsorshipType": "paid-content",
+                        "sponsorName": "Google",
+                        "sponsorLogo": "https://static.theguardian.com/commercial/sponsor/11/Nov/2019/522e3225-cc9f-4aca-b779-1885b95b2241-GoogleNest_Logo_Horizontal-280 copy-v2.png",
+                        "sponsorLink": "https://nest.com/",
+                        "sponsorLogoDimensions": {
+                            "width": 280,
+                            "height": 97
+                        }
+                    }
+                ],
+                "paidContentType": "Topic"
+            },
+            {
+                "id": "20th-century-fox-the-favourite/20th-century-fox-the-favourite",
+                "type": "paid-content",
+                "webTitle": "20th Century Fox: The Favourite",
+                "webUrl": "https://www.theguardian.com/20th-century-fox-the-favourite/20th-century-fox-the-favourite",
+                "apiUrl": "https://content.guardianapis.com/20th-century-fox-the-favourite/20th-century-fox-the-favourite",
+                "activeSponsorships": [
+                    {
+                        "sponsorshipType": "paid-content",
+                        "sponsorName": "20th Century Fox",
+                        "sponsorLogo": "https://static.theguardian.com/commercial/sponsor/13/Dec/2018/8b78fa5a-e515-47b8-a00f-ad0aa7f87ca5-favourite-logo.png",
+                        "sponsorLink": "https://youtu.be/W2G8SetsNM4",
+                        "aboutLink": "https://www.theguardian.com/info/2016/jan/25/content-funding",
+                        "sponsorLogoDimensions": {
+                            "width": 140,
+                            "height": 67
+                        },
+                        "validFrom": "2018-12-12T13:00:00Z",
+                        "validTo": "2020-12-12T13:00:00Z"
+                    }
+                ],
+                "paidContentType": "Topic"
+            },
+            {
+                "id": "profile/scottmurray",
+                "type": "contributor",
+                "webTitle": "Scott Murray",
+                "webUrl": "https://www.theguardian.com/profile/scottmurray",
+                "apiUrl": "https://content.guardianapis.com/profile/scottmurray",
+                "references": [],
+                "bio": "<p>Scott Murray writes about football and golf, usually when it's all happening. He is the co-author of Maurice Flitcroft biography&nbsp;<a href=\"http://www.amazon.co.uk/Phantom-Open-Maurice-Flitcroft-Worlds/dp/0224083163/ref=\">Phantom of the Open</a>&nbsp;and World Cup minute-by-minute whimsy&nbsp;<a href=\"https://www.amazon.co.uk/Gazza-Misses-Final-Rob-Smyth/dp/1472111036\">And Gazza Misses The Final</a>, and author of&nbsp;<a href=\"https://www.amazon.co.uk/Title-Story-First-Division/dp/1472936612\">The Title: The Story of the First Division</a><br></p>",
+                "firstName": "murray",
+                "lastName": "scott"
+            },
+            {
+                "id": "profile/AntonioUR",
+                "type": "contributor",
+                "webTitle": "Antonio",
+                "webUrl": "https://www.theguardian.com/profile/scottmurray",
+                "apiUrl": "https://content.guardianapis.com/profile/scottmurray",
+                "references": [],
+                "bio": "<p>ScAntonioappening. He is the co-author of Maurice Flitcroft biography&nbsp;<a href=\"http://www.amazon.co.uk/Phantom-Open-Maurice-Flitcroft-Worlds/dp/0224083163/ref=\">Phantom of the Open</a>&nbsp;and World Cup minute-by-minute whimsy&nbsp;<a href=\"https://www.amazon.co.uk/Gazza-Misses-Final-Rob-Smyth/dp/1472111036\">And Gazza Misses The Final</a>, and author of&nbsp;<a href=\"https://www.amazon.co.uk/Title-Story-First-Division/dp/1472936612\">The Title: The Story of the First Division</a><br></p>",
+                "twitterHandle": "lospoll",
+                "lastName": "scott"
+            }
+        ]
+    }
+}
