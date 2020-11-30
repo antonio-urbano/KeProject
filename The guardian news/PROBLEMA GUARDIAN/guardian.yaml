@@ -1,0 +1,97 @@
+prefixes:
+  guardian-news: http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews/
+  
+mappings:
+  content:
+    sources:
+      - ['content.json~jsonpath', '$.response.results[*]']
+    subject: guardian-news:content/$(id)
+    po:
+      - [ a, guardian-news:Content ]
+      - [ guardian-news:webPublicationDate, $(webPublicationDate) ]
+      - [ guardian-news:webTitle, $(webTitle) ]
+      - [ guardian-news:webUrl, $(webUrl) ]
+      - [ guardian-news:apiUrl, $(apiUrl) ]
+      - p: guardian-news:hasSection
+        o:
+         - mapping: section
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(sectionId)]
+              - [str2, $(id)]
+      - p: guardian-news:hasTag
+        o:
+         - mapping: tag
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(id)]
+              - [str2, $(id)]
+              
+  section:
+    sources:
+      - ['sections.json~jsonpath', '$.response.results[*]']
+    subject: guardian-news:section/$(id)
+    po:
+      - [a, guardian-news:Section]
+      - [guardian-news:webTitle, $(webTitle)]
+      - [ guardian-news:webUrl, $(webUrl) ]
+      - [ guardian-news:apiUrl, $(apiUrl) ]
+      - p: guardian-news:hasEdition
+        o:
+         - mapping: edition
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(editions)]
+              - [str2, $(id)]
+      
+  tag:
+    sources:
+      - ['tags.json~jsonpath', '$.response.results[*]']
+    subject: guardian-news:tag/$(id)
+    po:
+      - [a, guardian-news:Tag]
+      - [guardian-news:tagType, $(type)]
+      - [guardian-news:webTitle, $(webTitle)]
+      - [ guardian-news:webUrl, $(webUrl) ]
+      - [ guardian-news:apiUrl, $(apiUrl) ]
+      - [ guardian-news:tagDescription, $(description) ]
+      - [ guardian-news:authorBio, $(bio) ]
+      - [ guardian-news:authorFirstName, $(firstName) ]
+      - [ guardian-news:authorLastName, $(lastName) ]
+      - [ guardian-news:authorTwitter, $(twitterHandle) ]
+      - p: guardian-news:hasSponsor
+        o:
+         - mapping: sponsor
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(activeSponsorships)]
+              - [str2, $(sponsorLink)]
+      
+      
+  edition:
+    source:
+      - ['editions.json~jsonpath', '$.response.results[*]']
+    subject: guardian-news:edition/$(id)
+    po:
+      - [a, guardian-news:Edition]
+      - [guardian-news:path, $(path)]
+      - [guardian-news:editionName, $(edition)]
+      - [guardian-news:webTitle, $(webTitle)]
+      - [ guardian-news:webUrl, $(webUrl) ]
+      - [ guardian-news:apiUrl, $(apiUrl) ]
+      - [guardian-news:editionCode, $(code)]
+      
+  sponsor:
+    source:
+      - ['tags.json~jsonpath', '$.response.results[*].activeSponsorships.[*]']
+    subject: $(sponsorLink)
+    po:
+      - [a, guardian-news:Sponsor]
+      - [guardian-news:sponsorName, $(sponsorName)]
+      - [guardian-news:sponsorLogo, $(sponsorLogo)]
+      - [guardian-news:sponsorStartDate, $(validFrom)]
+      - [guardian-news:sponsorEndDate, $(validTo)]
