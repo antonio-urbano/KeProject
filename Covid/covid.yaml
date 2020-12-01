@@ -1,0 +1,100 @@
+prefixes:
+  covid: http://www.prova.org/covid/
+  schema: https://schema.org/
+  
+mappings:
+  covid-statistics:
+    sources:
+      - ['covid.csv~csv']
+    s: covid:$(key)/$(date)
+    po:
+      - [a, covid:CovidStatistics]
+      - [covid:date, $(date)]
+      - [covid:aggregationLevel, $(aggregation_level), xsd:integer]
+      - [covid:current_hospitalized, $(current_hospitalized), xsd:integer]
+      - [covid:current_intensiveCare, $(current_intensive_care), xsd:integer]
+      - [covid:new_confirmed, $(new_confirmed), xsd:integer]
+      - [covid:new_deceased, $(new_deceased), xsd:integer]
+      - [covid:new_hospitalized, $(new_hospitalized), xsd:integer]
+      - [covid:new_intensiveCare, $(new_intensive_care), xsd:integer]
+      - [covid:new_recovered, $(new_recovered), xsd:integer]
+      - [covid:new_tested, $(new_tested), xsd:integer]
+      - [covid:total_confirmed, $(total_confirmed), xsd:integer]
+      - [covid:total_deceased, $(total_deceased), xsd:integer]
+      - [covid:total_hospitalized, $(total_hospitalized), xsd:integer]
+      - [covid:total_intensiveCare, $(total_intensive_care), xsd:integer]
+      - [covid:total_recovered, $(total_recovered), xsd:integer]
+      - [covid:total_tested, $(total_tested), xsd:integer]
+      - [covid:current_ventilator, $(current_ventilator), xsd:integer]
+      - [covid:hospital_beds, $(hospital_beds), xsd:integer]
+      - [covid:new_ventilator, $(new_ventilator), xsd:integer]
+      - [covid:toal_ventilator, $(total_ventilator), xsd:integer]
+      - p: covid:statisticsOf
+        o:
+         - mapping: place
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(key)]
+              - [str2, $(key)]
+    
+  place:
+    sources:
+      - ['covid.csv~csv']
+    s: covid:$(key)
+    po:
+      - [a, schema:Place]
+      - [covid:code, $(country_code) $(subregion1_code) $(subregion2_code) $(locality_code)]
+      - [covid:name, $(country_name) $(subregion1_name) $(subregion2_name) $(locality_name)]
+      - [covid:latitude, $(latitude)]
+      - [covid:longitude, $(longitude)]
+      - [covid:population, $(population), xsd:integer]
+      - [covid:male_population, $(population_male), xsd:integer]
+      - [covid:female_population, $(population_female), xsd:integer]
+      - [covid:population_density, $(population_density), xsd:decimal]
+      
+  locality-statistics:
+    sources:
+      - ['covid.csv~csv']
+    s: covid:$(key)/$(date)
+    po:
+      - [a, covid:LifestyleStatistics]
+      - [covid:date, $(date)]
+      - [covid:aggregationLevel, $(aggregation_level), xsd:integer]
+      - [covid:pollution_mortality_rate, $(pollution_mortality_rate), xsd:decimal]
+      - [covid:life_expectancy, $(life_expectancy), xsd:integer]
+      - [covid:infant_mortality_rate, $(infant_mortality_rate), xsd:decimal]
+      - [covid:comorbidity_mortality_rate, $(comorbidity_mortality_rate), xsd:decimal]
+      - [covid:adult_male_mortality_rate, $(adult_male_mortality_rate), xsd:decimal]
+      - [covid:adult_female_mortality_rate, $(adult_female_mortality_rate), xsd:decimal]
+      - p: covid:lifestyleOf
+        o:
+         - mapping: place
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(key)]
+              - [str2, $(key)]
+              
+  weather-statistics:
+    sources:
+      - ['covid.csv~csv']
+    s: covid:$(key)/$(date)
+    po:
+      - [a, covid:WeatherStatistics]
+      - [covid:date, $(date)]
+      - [covid:aggregationLevel, $(aggregation_level), xsd:integer]
+      - [covid:avg_temp, $(average_temperature), xsd:decimal]
+      - [covid:min_temp, $(minimum_temperature), xsd:decimal]
+      - [covid:max_temp, $(maximum_temperature), xsd:decimal]
+      - [covid:rainfall, $(rainfall), xsd:decimal]
+      - [covid:humidity, $(relative_humidity), xsd:decimal]
+      - p: covid:weatherOf
+        o:
+         - mapping: place
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(key)]
+              - [str2, $(key)]
+      
