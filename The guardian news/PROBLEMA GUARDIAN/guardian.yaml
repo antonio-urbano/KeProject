@@ -1,5 +1,5 @@
 prefixes:
-  guardian-news: http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews/
+  guardian-news: http://www.prova.org/guardianNews/
   
 mappings:
   content:

@@ -1,8 +1,0 @@
-####################PROBLEMI: ######################
-content hasTag
-
-section hasEdition
-
-tag hasSponsor
-
-----------------------
