@@ -13,20 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="33" selection-start-line="33" selection-end-line="37" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1262">
-              <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+            <state relative-caret-position="187">
+              <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,13 +25,9 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="covid_prova.rdf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/covid_prova.rdf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="19481" column="78" selection-start-line="19481" selection-start-column="68" selection-end-line="19481" selection-end-column="78" />
-            </state>
-          </provider>
+      <file leaf-file-name="output.rdf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/output.rdf">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -54,10 +41,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>weatherSta</find>
-      <find>109</find>
-      <find>&lt;http://www.prova.org/covid/IT_75_LE_2020-11-21&gt;</find>
-      <find>&lt;http://www.prova.org/covid/IT_75_LE_2020-11-21&gt; &lt;http://www.prova.org/covid/date&gt;</find>
       <find>&lt;http://www.prova.org/covid/GB_ENG_2020-11-26&gt; &lt;http://www.prova.org/covid/new_confirmed&gt; &quot;</find>
       <find>total_c</find>
       <find>new_confirmed&gt;</find>
@@ -84,6 +67,10 @@
       <find>Model.wri</find>
       <find>&lt;http://www.prova.org/covid/US_NV_32019&gt;</find>
       <find>population</find>
+      <find>Chin</find>
+      <find>&lt;http://www.prova.org/covid/US_AL&gt;</find>
+      <find>Of&gt; &lt;http://www.prova.org/covid/US_AL&gt;</find>
+      <find>Of&gt; &lt;http://www.prova.org/covid/US_AR&gt;</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -116,8 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,6 +140,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,12 +154,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Antonio_2\IdeaProjects\kecovid\src\main\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Antonio_2\IdeaProjects\kecovid\src\main\resources" />
       <recent name="C:\Users\Antonio_2\IdeaProjects\kecovid\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Antonio_2\IdeaProjects\kecovid\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,11 +239,14 @@
       <updated>1606668054913</updated>
       <workItem from="1606668058229" duration="8163000" />
       <workItem from="1606737566990" duration="30203000" />
+      <workItem from="1606774799236" duration="1197000" />
+      <workItem from="1606807113415" duration="4187000" />
+      <workItem from="1606821446697" duration="4354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38366000" />
+    <option name="totallyTimeSpent" value="48107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -271,11 +261,11 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44674087" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4864865" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23792094" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -298,15 +288,53 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output.rdf">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="153000">
+          <caret line="9000" column="32" selection-start-line="9000" selection-start-column="32" selection-end-line="9000" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_prova.rdf" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output.rdf" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/covid.owl" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/few_covid_output.rdf" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output.rdf" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output_no_error.rdf" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output_modified.rdf" />
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_prova.rdf" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/covid.owl">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output.rdf">
       <provider selected="true" editor-type-id="text-editor">
@@ -319,9 +347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="73" column="71" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -332,45 +357,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/few_covid_output.rdf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="69" column="78" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output.rdf">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="212823">
-          <caret line="12519" column="32" selection-start-line="12519" selection-end-line="12519" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="338" column="26" selection-start-line="338" selection-start-column="26" selection-end-line="338" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output_no_error.rdf">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="102">
-          <caret line="6" column="95" selection-start-line="6" selection-start-column="95" selection-end-line="6" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output_modified.rdf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5355">
-          <caret line="594" selection-start-line="594" selection-end-line="594" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_BUONO.rdf">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://D:/Desktop/KE project/SOURCE/Covid/FINALE/original sourcec PROBLEM/covid_output.rdf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/few_covid_output.rdf" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output_no_error.rdf" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output_modified.rdf" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -378,20 +367,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_prova.rdf">
-      <provider editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-149760" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_output.rdf">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="2341">
+          <caret line="338" column="26" selection-start-line="338" selection-start-column="26" selection-end-line="338" selection-end-column="26" />
+        </state>
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="19481" column="78" selection-start-line="19481" selection-start-column="68" selection-end-line="19481" selection-end-column="78" />
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="153000">
+          <caret line="9000" column="32" selection-start-line="9000" selection-start-column="32" selection-end-line="9000" selection-end-column="32" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/output.rdf.xml">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state>
+          <caret selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/covid_prova.rdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="19450" column="71" selection-start-line="19450" selection-start-column="67" selection-end-line="19450" selection-end-column="71" />
+        </state>
+      </provider>
+      <provider editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-149760" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/output1.rdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="8411" column="6" selection-start-line="8411" selection-start-column="6" selection-end-line="8411" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/riot/system/ErrorHandlerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/output3.rdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="53671" column="119" selection-start-line="53671" selection-start-column="81" selection-end-line="53671" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/output2.rdf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/output4.rdf">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/output3_OK.rdf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/output.rdf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1262">
-          <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+        <state relative-caret-position="187">
+          <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
