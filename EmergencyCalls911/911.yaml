@@ -1,0 +1,33 @@
+prefixes:
+  ex: http://www.example.com/
+  dbo: http://dbpedia.org/ontology/
+  moac: http://observedchange.com/moac/ns/#
+  schema: http://schema.org/
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+mappings:
+  incident:
+    sources:
+      - [data_911.json~jsonpath, "$.[*]"]
+    s: ex:$(incident_number)
+    po:
+      - [ a, moac:Incident ]
+      - [ schema:address, $(address) ]
+      - [ schema:DateTime, $(datetime), xsd:dateTime ]
+      - [ schema:latitude, $(latitude) ]
+      - [ schema:longitude, $(longitude) ]
+      - [ moac:Emergency, $(type) ]
+      - p: ex:hasReportLocation
+        o:
+          - mapping: report_location
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(incident_number), s ]
+                - [ str2, $(incident_number), o ]
+  report_location:
+    sources:
+      - [data_911.json~jsonpath, "$.[*]"]
+    s: ex:$(incident_number)_reportedFrom
+    po:
+      - [schema:GeoShape, $(report_location.coordinates) ]
