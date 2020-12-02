@@ -1,0 +1,700 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#"
+     xml:base="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:AnnotationVocabulary="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/"
+     xmlns:SpecificationMetadata="http://www.omg.org/techprocess/ab/SpecificationMetadata/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- http://www.omg.org/techprocess/ab/SpecificationMetadata/directSource -->
+
+    <owl:AnnotationProperty rdf:about="http://www.omg.org/techprocess/ab/SpecificationMetadata/directSource"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/abbreviation -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/abbreviation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/commonDesignation -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/commonDesignation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/definitionOrigin -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/definitionOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/techprocess/ab/SpecificationMetadata/directSource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/modifiedOn -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/modifiedOn">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/preferredDesignation -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/preferredDesignation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/synonym -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/synonym">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/termOrigin -->
+
+    <owl:AnnotationProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/termOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/techprocess/ab/SpecificationMetadata/directSource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasMarketCapChangeIndicators -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasMarketCapChangeIndicators">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapChange"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapChangePct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasPriceChangeIndicators -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasPriceChangeIndicators">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#PriceChangePct"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Price_change"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasSupplyValues -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasSupplyValues">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CurrencySupply"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasVolumeChangeIndicators -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasVolumeChangeIndicators">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeIndicators"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#first_candle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#first_candle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#first_order_book -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#first_order_book">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#first_priced_at -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#first_priced_at">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#first_trade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#first_trade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasID">
+        <owl:equivalentProperty rdf:resource="https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/hasName"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasMarketCap -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasMarketCap">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#hasPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#high -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#high">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Price"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#high_timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#high_timestamp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Price"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#logoURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#logoURL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#num_exchanges -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#num_exchanges">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#num_pairs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#num_pairs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#num_pairs_unmapped -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#num_pairs_unmapped">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#priceTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#priceTimestamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Price"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#pricedate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#pricedate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Price"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#rank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#rank">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#rankDelta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#rankDelta">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#symbol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#symbol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/hasName -->
+
+    <owl:DatatypeProperty rdf:about="https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/hasName">
+        <rdfs:domain rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Active -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Active">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CirculatingSupply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CirculatingSupply">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CurrencySupply"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:isDefinedBy>The best approximation of the number of coins that are circulating in the market and in the general public’s hands.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CryptoCurrency">
+        <rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CurrencySupply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CurrencySupply"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Dead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Dead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#InActive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#InActive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Indicators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Indicators"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Interval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Indicators"/>
+        <rdfs:comment>Enum: &quot;1h&quot; &quot;1d&quot; &quot;7d&quot; &quot;30d&quot; &quot;365d&quot; &quot;ytd&quot;
+Example: interval=1d,30d
+Comma separated time interval of the ticker(s). Default is 1d,7d,30d,365d,ytd.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapIndicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapIndicators"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:isDefinedBy>Change in the Market Cap value in the time interval</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapChangePct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapChangePct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapIndicators"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:isDefinedBy>Percentage of market cap change in an interval</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapIndicators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MarketCapIndicators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MaxSupply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#MaxSupply">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#CurrencySupply"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:isDefinedBy>The best approximation of the maximum amount of coins that will ever exist in the lifetime of the cryptocurrency.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#PriceChangeIndicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#PriceChangeIndicators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#PriceChangeIndicators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#PriceChangePct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#PriceChangePct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#PriceChangeIndicators"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:isDefinedBy>Percentage of change in price of a crypto currency in a time interval</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Price_change -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Price_change">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#PriceChangeIndicators"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:isDefinedBy>Price change of a crypto Currency in an interval represented in a given fiat currency unit</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Status">
+        <rdfs:isDefinedBy>Current status of a Crypro currency</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Volume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeIndicators"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:isDefinedBy>A cryptocurrency&apos;s trading volume is the number of coins that have exchanged hands during a defined period of time</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeIndicators"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:isDefinedBy>Change in volume of crypto currency in a given interval</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeChangePct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeChangePct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeIndicators"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:isDefinedBy>Percentage Change in volume of crypto currency in a given interval</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeIndicators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#VolumeIndicators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency -->
+
+    <owl:Class rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>QName: fibo-fnd-acc-cur:Currency</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/"/>
+        <rdfs:label>currency</rdfs:label>
+        <skos:definition>medium of exchange value, defined by reference to the geographical location of the monetary authorities responsible for it</skos:definition>
+        <AnnotationVocabulary:definitionOrigin>Codes for the representation of currencies and funds, ISO 4217, Eighth edition, 2015-08-01, section 3.2</AnnotationVocabulary:definitionOrigin>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#ytd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#ytd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#1d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#1d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#1h -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#1h">
+        <rdf:type rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#30d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#30d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#365d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#365d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#7d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#7d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/Agents/AutonomousAgent">
+        <SpecificationMetadata:directSource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.omg.org/techprocess/meetings/schedule/AMP.html</SpecificationMetadata:directSource>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/NationalIdentificationNumber">
+        <skos:altLabel>national insurance number</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Law/Jurisdiction/StatuteLaw">
+        <skos:altLabel>statutory law</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.omg.org/spec/LCC/Countries/CountryRepresentation/hasPart">
+        <SpecificationMetadata:directSource>Stanford Encyclopedia of Philosophy at http://plato.stanford.edu/entries/mereology/</SpecificationMetadata:directSource>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.omg.org/spec/LCC/Countries/CountryRepresentation/isPartOf">
+        <SpecificationMetadata:directSource>Stanford Encyclopedia of Philosophy at http://plato.stanford.edu/entries/mereology/</SpecificationMetadata:directSource>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/CodeSet">
+        <skos:altLabel>coding scheme</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/LanguageIdentifier">
+        <skos:altLabel>language symbol</skos:altLabel>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Active"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#Dead"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#InActive"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

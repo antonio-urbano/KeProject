@@ -1,0 +1,585 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#"
+     xml:base="http://www.semanticweb.org/athira/ontologies/2020/9/911calls"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:moac="http://observedchange.com/moac/ns/#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/source -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#hasReport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#hasReport">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Report"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#hasReportLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#hasReportLocation">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Incident"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Report"/>
+        <rdfs:range rdf:resource="http://schema.org/GeoShape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://observedchange.com/moac/ns#category -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#category">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Incident"/>
+        <rdfs:isDefinedBy>category is about the sort of an incident.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#description -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#description">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">description is about the content of an incident.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#title -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#title">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Title is an identifying name given to an incident.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/address -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/address">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/latitude">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/longitude">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#IncidentNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#IncidentNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Report"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Emergency -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Emergency">
+        <rdfs:isDefinedBy>Emergency is a situation that poses an immediate crisis to human, life, health, property or environment.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Fire -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Fire">
+        <rdfs:subClassOf rdf:resource="http://observedchange.com/moac/ns#Emergency"/>
+        <rdfs:isDefinedBy>Fire is an uncontrolled burning that has the potential to cause physical damage on human life, health, property or ecology.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#HighlyVulnurable -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#HighlyVulnurable">
+        <rdfs:subClassOf rdf:resource="http://observedchange.com/moac/ns#Emergency"/>
+        <rdfs:isDefinedBy>High possibility of loss resulting from the occurrence of the phenomenon.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Incident -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Incident">
+        <rdfs:comment xml:lang="en">Incident is a distinct or definite event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:isDefinedBy>Incident is a distinct or definite event.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#MedicalEmergency -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#MedicalEmergency">
+        <rdfs:subClassOf rdf:resource="http://observedchange.com/moac/ns#Emergency"/>
+        <rdfs:isDefinedBy>A medical emergency is an injury that is acute and poses an immediate risk to a person&apos;s life or long term health.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#PeopleTrapped -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#PeopleTrapped">
+        <rdfs:subClassOf rdf:resource="http://observedchange.com/moac/ns#Emergency"/>
+        <rdfs:isDefinedBy>People found in dangerous stituation might not be able to escape from the place they are.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/DateTime -->
+
+    <owl:Class rdf:about="http://schema.org/DateTime">
+        <rdfs:comment>A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] (see Chapter 5.4 of ISO 8601).</rdfs:comment>
+        <rdfs:label>DateTime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/GeoCoordinates -->
+
+    <owl:Class rdf:about="http://schema.org/GeoCoordinates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Location"/>
+        <rdfs:comment>The geographic coordinates of a place or event.</rdfs:comment>
+        <rdfs:label>GeoCoordinates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/GeoShape -->
+
+    <owl:Class rdf:about="http://schema.org/GeoShape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Location"/>
+        <schema:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews"/>
+        <rdfs:comment>The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.</rdfs:comment>
+        <rdfs:label>GeoShape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Report -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Report">
+        <rdfs:isDefinedBy>A call made to report the Incident</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Bleeding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Bleeding">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#BreathingDifficulty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#BreathingDifficulty">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#BrokenTree -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#BrokenTree"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#BuldingFire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#BuldingFire">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#Fire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Burns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Burns">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ChemicalAttack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ChemicalAttack"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ChemicalLeak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ChemicalLeak"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Earthquick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Earthquick"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#EmergencyMedicalAttentionNeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#EmergencyMedicalAttentionNeed">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ExtremePains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ExtremePains">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#FireAlarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#FireAlarm">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#Fire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Flood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Flood"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ForestFire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ForestFire">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#Fire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#GarageFire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#GarageFire">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#Fire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#GasLeak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#GasLeak"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#HeartAttack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#HeartAttack">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#IllegalActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#IllegalActivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ImmediatePoliceAttention -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ImmediatePoliceAttention"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Injuries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Injuries">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Kidnapping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Kidnapping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Killing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Killing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#KnifeOrSharpObjects -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#KnifeOrSharpObjects"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#LandSlide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#LandSlide"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#LiquidSpill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#LiquidSpill"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Molestation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Molestation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Pregnency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Pregnency">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Rape -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Rape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Robbery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Robbery"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#RockFalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#RockFalls"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SexualMisconduct -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SexualMisconduct"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Shooting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Shooting"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Stalker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Stalker"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Stroke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Stroke">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SuicidalAttempt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SuicidalAttempt">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SuspeciousSituation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SuspeciousSituation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SuspiciousEmail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SuspiciousEmail"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SuspiciousPacket -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#SuspiciousPacket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ThreatCall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#ThreatCall"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Trapped -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Trapped"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Trauma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Trauma">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Tsunami -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Tsunami"/>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#VehicleFire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#VehicleFire">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#Fire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#VeryHighFever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#VeryHighFever">
+        <rdf:type rdf:resource="http://observedchange.com/moac/ns#MedicalEmergency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Violance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/athira/ontologies/2020/9/911calls#Violance"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#date">
+        <rdfs:comment xml:lang="en">date indicates a particular date.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#has3Wcomponent">
+        <rdfs:label xml:lang="en">has3Wcomponent</rdfs:label>
+        <rdfs:comment xml:lang="en">has3Wcomponent indicates the four saparate components of 3W i.e Who What Where and When.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

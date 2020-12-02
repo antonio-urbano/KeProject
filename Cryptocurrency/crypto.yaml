@@ -1,0 +1,123 @@
+prefixes:
+  cr: http://www.semanticweb.org/athira/ontologies/2020/10/cryptocurrency#
+  dbo: http://dbpedia.org/ontology/
+  schema: http://schema.org/
+
+mappings:
+  crypto:
+    sources:
+      - [data_crypto.json~jsonpath, "$.[*]"]
+    s: cr:$(currency)
+    po:
+      - [ a, cr:CryptoCurrency ]
+      - [ cr:hasID, $(id) ]
+      - [ cr:logoURL, $(logo_url) ]
+      - [ cr:symbol, $(symbol) ]
+      - [ cr:hasName, $(name) ]
+      - [ cr:first_candle, $(first_candle), xsd:dateTimeStamp ]
+      - [ cr:first_order_book, $(first_order_book), xsd:dateTimeStamp ]
+      - [ cr:first_trade, $(first_trade), xsd:dateTimeStamp ]
+      - [ cr:hasPrice, $(price), xsd:decimal ]
+      - [ cr:pricedate, $(price_date), xsd:dateTimeStamp ]
+      - [ cr:hasMarketCap, $(market_cap), xsd:integer ]
+      - [ cr:priceTimestamp, $(price_timestamp), xsd:dateTimeStamp ]
+      - [ cr:high, $(high), xsd:decimal ]
+      - [ cr:high_timestamp, $(high_timestamp), xsd:dateTimeStamp ]
+      - [ cr:num_exchanges, $(num_exchanges), xsd:integer ]
+      - [ cr:num_pairs, $(num_pairs), xsd:integer ]
+      - [ cr:num_pairs_unmapped, $(num_pairs_unmapped), xsd:integer ]
+      - [ cr:rank, $(rank), xsd:integer ]
+      - [ cr:rankDelta, $(rank_delta) , xsd:integer]
+      
+      - p: cr:hasStatus
+        o:
+          - mapping: status
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(currency), s ]
+                - [ str2, $(currency), o ]
+                
+      - p: cr:hasSupplyValues
+        o:
+          - mapping: supply
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(currency), s ]
+                - [ str2, $(currency), o ]
+                
+      - p: cr:hasMarketCapChangeIndicators
+        o:
+          - mapping: marketCap
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(currency), s ]
+                - [ str2, $(currency), o ]
+      
+      - p: cr:hasPriceChangeIndicators
+        o:
+          - mapping: price
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(currency), s ]
+                - [ str2, $(currency), o ]
+                
+      - p: cr:hasVolumeChangeIndicators
+        o:
+          - mapping: volume
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(currency), s ]
+                - [ str2, $(currency), o ]
+
+  status:
+    sources:
+      - [data_crypto.json~jsonpath, "$.[*]"]
+    s: cr:$(currency)_status
+    po:
+      - [ a, cr:Status ]
+      - [ cr:Status, $(status) ]
+                
+  
+  supply:
+    sources:
+      - [data_crypto.json~jsonpath, "$.[*]"]
+    s: cr:$(currency)_inSupplyValues
+    po:
+      - [ a, cr:CurrencySupply ]
+      - [ cr:circulatingSupply, $(circulating_supply), xsd:integer ]
+      - [ cr:MaximumSupply, $(max_supply), xsd:integer ]
+  marketCap:
+    sources:
+      - [data_crypto.json~jsonpath, "$.[*]"]
+    s: cr:$(currency)_marketCapChangeIn_7days
+    po:
+      - [ a, cr:MarketCapIndicators ]
+      - [ cr:market_cap_change, $(7d.market_cap_change) ]
+      - [ cr:market_cap_change_Percentage, $(7d.market_cap_change_pct) ]
+  price:
+    sources:
+      - [data_crypto.json~jsonpath, "$.[*]"]
+    s: cr:$(currency)_priceChangeIn_7days
+    po:
+      - [ a, cr:priceIndicators ]
+      - [ cr:price_change, $(7d.price_change) ]
+      - [ cr:price_change_Percentage, $(7d.price_change_pct) ]
+  
+  volume:
+    sources:
+      - [data_crypto.json~jsonpath, "$.[*]"]
+    s: cr:$(currency)_volumeChangeIn_7days
+    po:
+      - [ a, cr:VolumeIndicators ]
+      - [ cr:volume, $(7d.volume) ]
+      - [ cr:volume_change, $(7d.volume_change) ]
+      - [ cr:volume_change_Percentage, $(7d.volume_change_pct) ]
+      
+    
+      
+      

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix schema: <http://schema.org/>.
+@prefix ex: <http://www.example.com/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix moac: <http://observedchange.com/moac/ns/#>.
+
+ex:F200107030 a moac:Incident;
+    schema:address "an";
+    schema:DateTime "2020-10-29T00:02:00.000"^^xsd:dateTime;
+    schema:latitude "47.54927";
+    schema:longitude "-122.289601";
+    moac:Emergency "Medic Response";
+    ex:hasReportLocation ex:F200107030_reportedFrom.
+ex:F200107032 a moac:Incident;
+    schema:address "906 26th Ave S";
+    schema:DateTime "2020-10-29T00:03:00.000"^^xsd:dateTime;
+    schema:latitude "47.594529";
+    schema:longitude "-122.299061";
+    moac:Emergency "Low Acuity Response";
+    ex:hasReportLocation ex:F200107032_reportedFrom.
+ex:F200107030_reportedFrom schema:GeoShape "-122.289601", "47.54927".
+ex:F200107032_reportedFrom schema:GeoShape "-122.299061", "47.594529".
