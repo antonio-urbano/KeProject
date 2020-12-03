@@ -9,7 +9,7 @@ public class Main {
 
 
         Model m = ModelFactory.createDefaultModel();
-        InputStream is = FileManager.get().open( "./src/main/resources/output.rdf");
+        InputStream is = FileManager.get().open( "./src/main/resources/covid_output.rdf");
 
         if (is == null) {
             throw new IllegalArgumentException("File RDF not found.");
