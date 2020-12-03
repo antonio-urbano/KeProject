@@ -3,7 +3,9 @@ A collection of ontologies developed as project for the Knowledge Engineering co
 The following ontologies have been developed. Each subdirectory contains an README describing in more details the ontology and how it can be used:
 
 * Cryptocurrency
-* [Covid] (Covid/README.md)
-* Guardian News (The Guardian news/README.md)
+* [Covid](Covid/README.md)
+* [Guardian News](The Guardian news/README.md)
 * 911 emergency calls
 
+
+[Covid](Covid/README.md)
