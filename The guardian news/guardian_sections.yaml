@@ -1,0 +1,36 @@
+prefixes:
+  guardian-news: http://www.example.org/guardian/
+  
+mappings:
+  content:
+    sources:
+      - ['content.json~jsonpath', '$.response.results[*]']
+    subject: guardian-news:content/$(id)
+    po:
+      - [ a, guardian-news:Content ]
+      - [ guardian-news:webPublicationDate, $(webPublicationDate) ]
+      - [ guardian-news:webTitle, $(webTitle) ]
+      - [ guardian-news:webUrl, $(webUrl) ]
+      - [ guardian-news:apiUrl, $(apiUrl) ]
+      - p: guardian-news:hasSection
+        o:
+         - mapping: section
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(sectionId)]
+              - [str2, $(sectionId)]
+  section:
+    sources:
+      - ['content.json~jsonpath', '$.response.results[*]']
+    subject: guardian-news:section/$(sectionId)
+    po:
+      - [a, guardian-news:Section]
+      - [guardian-news:webTitle, $(sectionName)]
+      - [ guardian-news:webUrl, $(webUrl) ]
+      - [ guardian-news:apiUrl, $(apiUrl) ]
+      
+      
+      
+      
+  

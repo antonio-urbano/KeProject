@@ -1,0 +1,64 @@
+
+
+The contents having author scott murray
+PREFIX guardian:<http://www.example.org/guardian/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?content
+WHERE { ?content a guardian:Content.
+		?content guardian:hasTag ?t.
+		?t guardian:tagType "contributor".
+		?t guardian:firstName "scott".
+		?t guardian:lastName "murray".		
+	}
+
+---------------------------
+
+The bio of authors which have written a content published in December 2020
+
+PREFIX guardian:<http://www.example.org/guardian/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?author ?bio ?content
+WHERE { ?author a guardian:Tag.
+		?author guardian:tagType "contributor".
+		?author guardian:authorBio ?bio.
+		?content guardian:hasTag ?author.
+		?content guardian:webPublicationDate ?d.
+		FILTER (?d > "2020-12-01T00:00:01Z"^^xsd:dateTime && ?d < "2020-12-31T23:59:59Z"^^xsd:dateTime).
+	}	
+	
+---------------------------------------------------------
+
+The contents having section with an edition name = "international"
+
+PREFIX guardian:<http://www.example.org/guardian/>
+
+
+SELECT ?content ?section
+WHERE { ?content a guardian:Content.
+		?author guardian:hasSection ?section.
+		?section guardian:hasEdition ?e.
+		?e guardian:editionName "international".
+		
+----------------------------------
+
+The sponsor logo of the tags of type  "series"
+
+PREFIX guardian:<http://www.example.org/guardian/>
+
+SELECT ?sponsorLogo
+WHERE { ?s a guardian:Sponsor.
+		?s guardian:sponsorLogo ?sponsorLogo.
+		?t a guardian:Tag.
+		?t guardian:hasSponsor ?s.
+		?t guardian:tagType "series"
+	}
+
+
+
+-----------------------
+"The webUrl of the tags"
+"The sponsors having sponsor name Google"
+"The twitter name of the authors"
+"The contents and their apiUrl having a section with title Football"

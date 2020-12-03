@@ -1,0 +1,27 @@
+prefixes:
+  guardian-news: http://www.example.org/guardian/
+  
+mappings:
+  edition:
+    source:
+      - ['sections.json~jsonpath', '$.response.results[*].editions.[*]']
+    subject: guardian-news:edition/$(id)
+    po:
+      - [a, guardian-news:Edition]
+      - [guardian-news:path, $(path)]
+      - [guardian-news:editionName, $(edition)]
+      - [guardian-news:webTitle, $(webTitle)]
+      - [ guardian-news:webUrl, $(webUrl) ]
+      - [ guardian-news:apiUrl, $(apiUrl) ]
+      - [guardian-news:editionCode, $(code)]
+      
+  sponsor:
+    source:
+      - ['tags.json~jsonpath', '$.response.results[*].activeSponsorships.[*]']
+    subject: $(sponsorLink)
+    po:
+      - [a, guardian-news:Sponsor]
+      - [guardian-news:sponsorName, $(sponsorName)]
+      - [guardian-news:sponsorLogo, $(sponsorLogo)]
+      - [guardian-news:sponsorStartDate, $(validFrom)]
+      - [guardian-news:sponsorEndDate, $(validTo)]

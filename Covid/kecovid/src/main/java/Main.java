@@ -106,15 +106,14 @@ public class Main {
 
         //-------------------------------------------------------
 
-        System.out.println("New deceased, new confirmed and new recovered of all the countries having a min temp<-10° or a max temp>+35°");
+        System.out.println("New deceased and new confirmed of all the countries having a min temp<-10° or a max temp>+35°");
 
-        String q5 = "SELECT ?country ?new_deceased ?new_confirmed ?new_recovered (STR(?date) AS ?Date) ?max_temp ?min_temp " +
+        String q5 = "SELECT ?country ?new_deceased ?new_confirmed (STR(?date) AS ?Date) ?max_temp ?min_temp " +
                     "WHERE{ ?country a <https://schema.org/Place>. " +
                             "?statistics <http://www.example.org/covid/statisticsOf> ?country." +
                             "?statistics <http://www.example.org/covid/aggregationLevel> \"0\"^^<http://www.w3.org/2001/XMLSchema#integer>." +
                             "?statistics <http://www.example.org/covid/new_deceased> ?new_deceased." +
                             "?statistics <http://www.example.org/covid/new_confirmed> ?new_confirmed." +
-                            "?statistics <http://www.example.org/covid/new_recovered> ?new_recovered." +
                             "?statistics <http://www.example.org/covid/date> ?date." +
                             "?weather <http://www.example.org/covid/weatherOf> ?country." +
                             "?weather <http://www.example.org/covid/date> ?date." +

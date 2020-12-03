@@ -2,12 +2,22 @@
     "response": {
         "status": "ok",
         "userTier": "developer",
-        "total": 63198,
+        "total": 63243,
         "startIndex": 1,
         "pageSize": 10,
         "currentPage": 1,
-        "pages": 6320,
+        "pages": 6325,
         "results": [
+            {
+                "id": "football/uefa-europa-league",
+                "type": "keyword",
+                "sectionId": "football",
+                "sectionName": "Football",
+                "webTitle": "Europa League",
+                "webUrl": "https://www.theguardian.com/football/uefa-europa-league",
+                "apiUrl": "https://content.guardianapis.com/football/uefa-europa-league",
+                "references": []
+            },
             {
                 "id": "2019-family-gift-guide/2019-family-gift-guide",
                 "type": "paid-content",
@@ -29,89 +39,6 @@
                 "paidContentType": "Topic"
             },
             {
-                "id": "20th-century-fox-the-favourite/20th-century-fox-the-favourite",
-                "type": "paid-content",
-                "webTitle": "20th Century Fox: The Favourite",
-                "webUrl": "https://www.theguardian.com/20th-century-fox-the-favourite/20th-century-fox-the-favourite",
-                "apiUrl": "https://content.guardianapis.com/20th-century-fox-the-favourite/20th-century-fox-the-favourite",
-                "activeSponsorships": [
-                    {
-                        "sponsorshipType": "paid-content",
-                        "sponsorName": "20th Century Fox",
-                        "sponsorLogo": "https://static.theguardian.com/commercial/sponsor/13/Dec/2018/8b78fa5a-e515-47b8-a00f-ad0aa7f87ca5-favourite-logo.png",
-                        "sponsorLink": "https://youtu.be/W2G8SetsNM4",
-                        "aboutLink": "https://www.theguardian.com/info/2016/jan/25/content-funding",
-                        "sponsorLogoDimensions": {
-                            "width": 140,
-                            "height": 67
-                        },
-                        "validFrom": "2018-12-12T13:00:00Z",
-                        "validTo": "2020-12-12T13:00:00Z"
-                    }
-                ],
-                "paidContentType": "Topic"
-            },
-            {
-                "id": "20th-century-fox-the-shape-of-water/20th-century-fox-the-shape-of-water",
-                "type": "paid-content",
-                "webTitle": "20th Century Fox: The Shape of Water",
-                "webUrl": "https://www.theguardian.com/20th-century-fox-the-shape-of-water/20th-century-fox-the-shape-of-water",
-                "apiUrl": "https://content.guardianapis.com/20th-century-fox-the-shape-of-water/20th-century-fox-the-shape-of-water",
-                "activeSponsorships": [
-                    {
-                        "sponsorshipType": "paid-content",
-                        "sponsorName": "The Shape of Water",
-                        "sponsorLogo": "https://static.theguardian.com/commercial/sponsor/08/Jan/2018/4f03740b-49c7-4484-a6e5-a697ad4aa560-ShapeOfWater.jpg",
-                        "sponsorLink": "https://youtu.be/EQH3jqetJoY",
-                        "aboutLink": "https://www.theguardian.com/info/2016/jan/25/content-funding",
-                        "sponsorLogoDimensions": {
-                            "width": 140,
-                            "height": 90
-                        }
-                    }
-                ],
-                "paidContentType": "Topic"
-            },
-            {
-                "id": "a-different-christmas/series/gifting-reimagined",
-                "type": "series",
-                "sectionId": "a-different-christmas",
-                "sectionName": "A different Christmas",
-                "webTitle": "Gifting reimagined",
-                "webUrl": "https://www.theguardian.com/a-different-christmas/series/gifting-reimagined",
-                "apiUrl": "https://content.guardianapis.com/a-different-christmas/series/gifting-reimagined"
-            },
-            {
-                "id": "a-different-christmas/series/on-the-climate-frontline",
-                "type": "series",
-                "sectionId": "a-different-christmas",
-                "sectionName": "A different Christmas",
-                "webTitle": "On the climate frontline",
-                "webUrl": "https://www.theguardian.com/a-different-christmas/series/on-the-climate-frontline",
-                "apiUrl": "https://content.guardianapis.com/a-different-christmas/series/on-the-climate-frontline"
-            },
-            {
-                "id": "a-place-called-home/a-place-called-home",
-                "type": "paid-content",
-                "webTitle": "A place called home",
-                "webUrl": "https://www.theguardian.com/a-place-called-home/a-place-called-home",
-                "apiUrl": "https://content.guardianapis.com/a-place-called-home/a-place-called-home",
-                "activeSponsorships": [
-                    {
-                        "sponsorshipType": "paid-content",
-                        "sponsorName": "Nationwide",
-                        "sponsorLogo": "https://static.theguardian.com/commercial/sponsor/09/Nov/2020/21c6293e-a8da-4f53-abdf-6ff77a14603c-Nationwide Logo.png",
-                        "sponsorLink": "https://www.nationwide.co.uk/",
-                        "sponsorLogoDimensions": {
-                            "width": 140,
-                            "height": 90
-                        },
-                        "validTo": "2021-03-31T22:59:00Z"
-                    }
-                ],
-                "paidContentType": "Topic"
-            },
-            {
                 "id": "a-shot-of-sustainability/a-shot-of-sustainability",
                 "type": "keyword",
                 "sectionId": "a-shot-of-sustainability",
@@ -119,22 +46,6 @@
                 "webTitle": "a shot of sustainability",
                 "webUrl": "https://www.theguardian.com/a-shot-of-sustainability/a-shot-of-sustainability",
                 "apiUrl": "https://content.guardianapis.com/a-shot-of-sustainability/a-shot-of-sustainability"
-            },
-            {
-                "id": "aberdeen-grampian/aberdeen-grampian",
-                "type": "keyword",
-                "sectionId": "aberdeen-grampian",
-                "sectionName": "Aberdeen-Grampian",
-                "webTitle": "Aberdeen-Grampian",
-                "webUrl": "https://www.theguardian.com/aberdeen-grampian/aberdeen-grampian",
-                "apiUrl": "https://content.guardianapis.com/aberdeen-grampian/aberdeen-grampian"
-            },
-            {
-                "id": "about/about",
-                "type": "keyword",
-                "webTitle": "About",
-                "webUrl": "https://www.theguardian.com/about/about",
-                "apiUrl": "https://content.guardianapis.com/about/about"
             },
             {
                 "id": "about/test-tag--do-not-use-this-",

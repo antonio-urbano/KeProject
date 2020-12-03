@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews">
+    <Prefix name="" IRI="http://www.semanticweb.org/antonio_2/ontologies/2020/10/guardianNews#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="/Content"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Edition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Endpoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Sponsor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Tag"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasEdition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSponsor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTag"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/apiUrl"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/authorBio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/authorFirstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/authorLastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/authorTwitter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/contributorInfo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/editionCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/editionName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/path"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/sponsorEndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/sponsorInfo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/sponsorLogo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/sponsorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/sponsorStartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/tagDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/tagInfo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/tagType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/webPublicationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/webTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/webUrl"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/Content"/>
+        <Class IRI="/Endpoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Content"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/webPublicationDate"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Edition"/>
+        <Class IRI="/Endpoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Edition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/editionName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Edition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/path"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Edition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/webTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Section"/>
+        <Class IRI="/Endpoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sponsor"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/sponsorLogo"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sponsor"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/sponsorName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Tag"/>
+        <Class IRI="/Endpoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Tag"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/tagInfo"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasEdition"/>
+        <Class IRI="/Section"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSection"/>
+        <Class IRI="/Content"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSponsor"/>
+        <Class IRI="/Tag"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasTag"/>
+        <Class IRI="/Content"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasEdition"/>
+        <Class IRI="/Edition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSection"/>
+        <Class IRI="/Section"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSponsor"/>
+        <Class IRI="/Sponsor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasTag"/>
+        <Class IRI="/Tag"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/authorBio"/>
+        <DataProperty IRI="/contributorInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/authorFirstName"/>
+        <DataProperty IRI="/contributorInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/authorLastName"/>
+        <DataProperty IRI="/contributorInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/authorTwitter"/>
+        <DataProperty IRI="/contributorInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/contributorInfo"/>
+        <DataProperty IRI="/tagInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/sponsorEndDate"/>
+        <DataProperty IRI="/sponsorInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/sponsorLogo"/>
+        <DataProperty IRI="/sponsorInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/sponsorName"/>
+        <DataProperty IRI="/sponsorInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/sponsorStartDate"/>
+        <DataProperty IRI="/sponsorInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/tagDescription"/>
+        <DataProperty IRI="/tagInfo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/tagType"/>
+        <DataProperty IRI="/tagInfo"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="/authorBio"/>
+        <Class IRI="/Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/authorFirstName"/>
+        <Class IRI="/Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/authorLastName"/>
+        <Class IRI="/Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/authorTwitter"/>
+        <Class IRI="/Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/contributorInfo"/>
+        <Class IRI="/Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/editionName"/>
+        <Class IRI="/Edition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/path"/>
+        <Class IRI="/Edition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/sponsorEndDate"/>
+        <Class IRI="/Sponsor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/sponsorLogo"/>
+        <Class IRI="/Sponsor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/sponsorName"/>
+        <Class IRI="/Sponsor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/sponsorStartDate"/>
+        <Class IRI="/Sponsor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/tagDescription"/>
+        <Class IRI="/Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/tagInfo"/>
+        <Class IRI="/Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/tagType"/>
+        <Class IRI="/Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/webPublicationDate"/>
+        <Class IRI="/Content"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/webTitle"/>
+        <Class IRI="/Endpoint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/webUrl"/>
+        <Class IRI="/Endpoint"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/authorBio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/authorFirstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/authorLastName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/authorTwitter"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/contributorInfo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/editionName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/path"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/sponsorEndDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/sponsorLogo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/sponsorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/sponsorStartDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/tagDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/tagType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/webPublicationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/webTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/webUrl"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/tagDescription</IRI>
+        <Literal>Description of tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/webTitle</IRI>
+        <Literal>The title displayed on the web</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

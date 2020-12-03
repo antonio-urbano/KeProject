@@ -1,0 +1,19 @@
+prefixes:
+  guardian-news: http://www.example.org/guardian/
+  
+mappings:
+  tag:
+    sources:
+      - ['content.json~jsonpath', '$.response.results[*].tags.[*]']
+    subject: guardian-news:tag/$(id)
+    po:
+      - [a, guardian-news:Tag]
+      - [guardian-news:tagType, $(type)]
+      - [guardian-news:webTitle, $(webTitle)]
+      - [ guardian-news:webUrl, $(webUrl) ]
+      - [ guardian-news:apiUrl, $(apiUrl) ]
+      - [ guardian-news:tagDescription, $(description) ]
+      - [ guardian-news:authorBio, $(bio) ]
+      - [ guardian-news:authorFirstName, $(firstName) ]
+      - [ guardian-news:authorLastName, $(lastName) ]
+      - [ guardian-news:authorTwitter, $(twitterHandle) ]
