@@ -4,6 +4,6 @@ The following ontologies have been developed. Each subdirectory contains an READ
 
 * Cryptocurrency
 * [Covid](Covid/README.md)
-* [Guardian News](The guardian news/README.md)
+* [Guardian News]("The guardian news"/README.md)
 * 911 emergency calls
 
