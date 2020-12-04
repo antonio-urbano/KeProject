@@ -10,7 +10,7 @@
 		?t guardian:firstName "scott". <br>
 		?t guardian:lastName "murray". <br>
 	}
-<p>
+	
 ---------------------------
 
 ## Query 2: The bio of authors which have written a content published in December 2020
@@ -40,7 +40,8 @@
 		?author guardian:hasSection ?section. <br>
 		?section guardian:hasEdition ?e. <br>
 		?e guardian:editionName "international". <br>
-		
+	}
+	
 ----------------------------------
 
 ## Query 4: The sponsor logo of the tags of type  "series"
