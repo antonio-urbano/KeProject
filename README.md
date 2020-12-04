@@ -1,6 +1,6 @@
 # KeProject
-A collection of ontologies developed as project for the Knowledge Engineering course 2019-2020 at Politecnico di Milano.
-The following ontologies have been developed. Each subdirectory contains an README describing in more details the ontology and how it can be used:
+A collection of ontologies developed as project for the *Knowledge Engineering* course at *Politecnico di Milano*. <br>
+Each subdirectory contains a README describing in more details the specific ontology we developed and how it can be used:
 
 * Cryptocurrency
 * [Covid](Covid/README.md)
