@@ -1,6 +1,5 @@
+## Query 1: The contents having author scott murray
 
-
-The contents having author scott murray
 PREFIX guardian:<http://www.example.org/guardian/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -14,7 +13,7 @@ WHERE { ?content a guardian:Content.
 
 ---------------------------
 
-The bio of authors which have written a content published in December 2020
+## Query 2: The bio of authors which have written a content published in December 2020
 
 PREFIX guardian:<http://www.example.org/guardian/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -30,7 +29,7 @@ WHERE { ?author a guardian:Tag.
 	
 ---------------------------------------------------------
 
-The contents having section with an edition name = "international"
+## Query 3: The contents having section with an edition name = "international"
 
 PREFIX guardian:<http://www.example.org/guardian/>
 
@@ -43,7 +42,7 @@ WHERE { ?content a guardian:Content.
 		
 ----------------------------------
 
-The sponsor logo of the tags of type  "series"
+## Query 4: The sponsor logo of the tags of type  "series"
 
 PREFIX guardian:<http://www.example.org/guardian/>
 
@@ -55,10 +54,4 @@ WHERE { ?s a guardian:Sponsor.
 		?t guardian:tagType "series"
 	}
 
-
-
 -----------------------
-"The webUrl of the tags"
-"The sponsors having sponsor name Google"
-"The twitter name of the authors"
-"The contents and their apiUrl having a section with title Football"

@@ -9,14 +9,11 @@ All regions are assigned a unique location key. The different aggregation levels
 
 0. *Country*
 1. *Subregion1*:  Province, state, or local equivalent
-2: *Subregion2*: Municipality, county, or local equivalent
-3: *Locality*: which may not follow strict hierarchical order, such as "city" or "nursing homes in X location"
-
-
-<p>
+2. *Subregion2*: Municipality, county, or local equivalent
+3. *Locality*: which may not follow strict hierarchical order, such as "city" or "nursing homes in X location"
 
 # Data Linking
-API REQUEST: the infomation about places and their associated statistics is retrieved from a get call. 
+**API REQUEST**: the infomation about places and their associated statistics is retrieved from a get call. 
 The python script [downloadCovidCSV.py](downloadCovidCSV.py) can be used for this purpose. 
 For more details about the dataset you can visit the following link:
 https://github.com/GoogleCloudPlatform/covid-19-open-data/
@@ -25,7 +22,7 @@ https://github.com/GoogleCloudPlatform/covid-19-open-data/
 These rules have been written and parsed using the Yarrrml matey tool. An example of rules can be seen in the [covid_rml_rules.rml.ttl](covid_rml_rules.rml.ttl) file.
 
 **RMLMAPPER** (https://github.com/RMLio/rmlmapper-java ): The RDF triples have been generated from the rml rules. For this we used the [rmlmapper.jar](./../rmlmapper-4.9.0.jar).
-Command: java -jar rmlmapper-4.9.0.jar.jar -m covid_rml_rules.rml.ttl -o output.rdf
+<br> *Command*: java -jar rmlmapper-4.9.0.jar.jar -m covid_rml_rules.rml.ttl -o output.rdf
 
 [covid_output.rdf](covid_output.rdf) contains the genearated RDF triples in N-triple format. They can be used in the for building the Jena Model.<br>
 **Important**: The original csv source file has encoding='cp1252'. In order to be used in Jena some manipulation of the data can be made, 
