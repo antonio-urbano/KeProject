@@ -10,7 +10,31 @@ All regions are assigned a unique location key. The different aggregation levels
 0. *Country*
 1. *Subregion1*:  Province, state, or local equivalent
 2. *Subregion2*: Municipality, county, or local equivalent
-3. *Locality*: which may not follow strict hierarchical order, such as "city" or "nursing homes in X location"
+3. *Locality*: which may not follow strict hierarchical order, such as "city"
+
+For the modeling of the Place and the Country, the classes https://schema.org/Place and https://schema.org/Country have been respectively used. 
+Then the class Subregion1, Subregion2 and Locality have been introduced to represent in our knowledge base the the places having a less aggregation level.<br>
+To each place several statistics have been associated. Mainly we can distinguish three different types of statistics:
+
+* WeatherStatistics: used for modeling the weather info. More precisely we have modeled the following properties:
+	* Minimum, maximum and average temperature
+	* Humidity
+	* Rainfall
+* LifestyleStatistics: to model statistics relative to the lifestyle of a place. Important properties are:
+	* adult_female_mortality_rate
+	* adult_male_mortality_rate
+	* comorbidity_mortality_rate
+	* infant_mortality_rate
+	* life_expectancy
+	* pollution_mortality_rate
+* CovidStatistics: all the infomation relative to COVID-19. It represents the core of our model for which we model both:
+	* statistics associated to the cases (e.g. the number of recovered, deceased, new confirmed, etc.); and
+	* statistics associated to resources (e.g. new ventilator, hospital beds, etc.)
+
+Each statistics is then identified by the place id to which is associated and the date in which it has been registered. <br>
+Finally some properties related to the place population have been modeled. 
+More precisely to each place may be defined the male and the female population and the population density.<br>
+
 
 # Data Linking
 **API REQUEST**: the infomation about places and their associated statistics is retrieved from a get call. 
