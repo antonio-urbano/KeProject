@@ -34,8 +34,8 @@ The sparqk kernel was installed using : https://github.com/paulovn/sparql-kernel
 SPARQL endpoint was created using - Jena-Fuseki. 
 
 ## Competency Questions
-All incidents of response type AId response reported between two dates
-All response types of incidents that happened in place with longitude "-122.318034"
-All incident numbers of all incidents that happened at 517 3rd Av
-All incident numbers of incidents that was reported from POINT(-122.228261 47.589118)
+      - All incidents of response type AId response reported between two dates
+      - All response types of incidents that happened in place with longitude "-122.318034"
+      - All incident numbers of all incidents that happened at 517 3rd Av
+      - All incident numbers of incidents that was reported from POINT(-122.228261 47.589118)
 
