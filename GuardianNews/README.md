@@ -62,4 +62,4 @@ Once the mappings is done, more interesting competency questions can be formulat
 * The contents having section with an edition name = "international"
 * The sponsor logo of the tags of type  "series"
 
-In the [Other interesting Queries](./Other interesting Queries.md) file you can find the SPARQL translation to these questions.
+In the [interestingQueries.md](./interestingQueries.md) file you can find the SPARQL translation to these questions.
