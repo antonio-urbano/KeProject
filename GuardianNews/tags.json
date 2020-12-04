@@ -1,0 +1,61 @@
+{
+    "response": {
+        "status": "ok",
+        "userTier": "developer",
+        "total": 63243,
+        "startIndex": 1,
+        "pageSize": 10,
+        "currentPage": 1,
+        "pages": 6325,
+        "results": [
+            {
+                "id": "football/uefa-europa-league",
+                "type": "keyword",
+                "sectionId": "football",
+                "sectionName": "Football",
+                "webTitle": "Europa League",
+                "webUrl": "https://www.theguardian.com/football/uefa-europa-league",
+                "apiUrl": "https://content.guardianapis.com/football/uefa-europa-league",
+                "references": []
+            },
+            {
+                "id": "2019-family-gift-guide/2019-family-gift-guide",
+                "type": "paid-content",
+                "webTitle": "2019 family gift guide",
+                "webUrl": "https://www.theguardian.com/2019-family-gift-guide/2019-family-gift-guide",
+                "apiUrl": "https://content.guardianapis.com/2019-family-gift-guide/2019-family-gift-guide",
+                "activeSponsorships": [
+                    {
+                        "sponsorshipType": "paid-content",
+                        "sponsorName": "Google",
+                        "sponsorLogo": "https://static.theguardian.com/commercial/sponsor/11/Nov/2019/522e3225-cc9f-4aca-b779-1885b95b2241-GoogleNest_Logo_Horizontal-280 copy-v2.png",
+                        "sponsorLink": "https://nest.com/",
+                        "sponsorLogoDimensions": {
+                            "width": 280,
+                            "height": 97
+                        }
+                    }
+                ],
+                "paidContentType": "Topic"
+            },
+            {
+                "id": "a-shot-of-sustainability/a-shot-of-sustainability",
+                "type": "keyword",
+                "sectionId": "a-shot-of-sustainability",
+                "sectionName": "A shot of sustainability",
+                "webTitle": "a shot of sustainability",
+                "webUrl": "https://www.theguardian.com/a-shot-of-sustainability/a-shot-of-sustainability",
+                "apiUrl": "https://content.guardianapis.com/a-shot-of-sustainability/a-shot-of-sustainability"
+            },
+            {
+                "id": "about/test-tag--do-not-use-this-",
+                "type": "keyword",
+                "sectionId": "about",
+                "sectionName": "About",
+                "webTitle": "Test Tag (DO NOT USE THIS)",
+                "webUrl": "https://www.theguardian.com/about/test-tag--do-not-use-this-",
+                "apiUrl": "https://content.guardianapis.com/about/test-tag--do-not-use-this-"
+            }
+        ]
+    }
+}

@@ -1,5 +1,5 @@
 prefixes:
-  covid: http://www.prova.org/covid/
+  covid: http://www.example.org/covid/
   schema: https://schema.org/
   
 mappings:
@@ -41,13 +41,13 @@ mappings:
   place:
     sources:
       - ['covid.csv~csv']
-    s: covid:$(key)
+    s: schema:Place/$(key)
     po:
       - [a, schema:Place]
       - [covid:code, $(country_code) $(subregion1_code) $(subregion2_code) $(locality_code)]
-      - [covid:name, $(country_name) $(subregion1_name) $(subregion2_name) $(locality_name)]
-      - [covid:latitude, $(latitude)]
-      - [covid:longitude, $(longitude)]
+      - [schema:name, $(country_name) $(subregion1_name) $(subregion2_name) $(locality_name)]
+      - [schema:latitude, $(latitude)]
+      - [schema:longitude, $(longitude)]
       - [covid:population, $(population), xsd:integer]
       - [covid:male_population, $(population_male), xsd:integer]
       - [covid:female_population, $(population_female), xsd:integer]

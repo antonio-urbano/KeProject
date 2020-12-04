@@ -1,0 +1,57 @@
+<http://www.example.org/guardian/content/global-development%2F2020%2Fdec%2F03%2Fyemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Content>.
+<http://www.example.org/guardian/content/global-development%2F2020%2Fdec%2F03%2Fyemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns> <http://www.example.org/guardian/webPublicationDate> "2020-12-03T17:57:42Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://www.example.org/guardian/content/global-development%2F2020%2Fdec%2F03%2Fyemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns> <http://www.example.org/guardian/webTitle> "Yemen 'one step away from famine' as donors dry up amid Covid, UN warns".
+<http://www.example.org/guardian/content/global-development%2F2020%2Fdec%2F03%2Fyemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/global-development/2020/dec/03/yemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns".
+<http://www.example.org/guardian/content/global-development%2F2020%2Fdec%2F03%2Fyemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/global-development/2020/dec/03/yemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns".
+<http://www.example.org/guardian/content/football%2F2020%2Fdec%2F03%2Fpremier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Content>.
+<http://www.example.org/guardian/content/football%2F2020%2Fdec%2F03%2Fpremier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much> <http://www.example.org/guardian/webPublicationDate> "2020-12-03T17:57:19Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://www.example.org/guardian/content/football%2F2020%2Fdec%2F03%2Fpremier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much> <http://www.example.org/guardian/webTitle> "Premier League fans must wear masks, not sing too much and no hugging".
+<http://www.example.org/guardian/content/football%2F2020%2Fdec%2F03%2Fpremier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/football/2020/dec/03/premier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much".
+<http://www.example.org/guardian/content/football%2F2020%2Fdec%2F03%2Fpremier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/football/2020/dec/03/premier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much".
+<http://www.example.org/guardian/section/about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Section>.
+<http://www.example.org/guardian/section/about> <http://www.example.org/guardian/webTitle> "About".
+<http://www.example.org/guardian/section/about> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/about".
+<http://www.example.org/guardian/section/about> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/about".
+<http://www.example.org/guardian/section/animals-farmed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Section>.
+<http://www.example.org/guardian/section/animals-farmed> <http://www.example.org/guardian/webTitle> "Animals farmed".
+<http://www.example.org/guardian/section/animals-farmed> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/animals-farmed".
+<http://www.example.org/guardian/section/animals-farmed> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/animals-farmed".
+<http://www.example.org/guardian/section/travel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Section>.
+<http://www.example.org/guardian/section/travel> <http://www.example.org/guardian/webTitle> "Travel".
+<http://www.example.org/guardian/section/travel> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/travel".
+<http://www.example.org/guardian/section/travel> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/travel".
+<http://www.example.org/guardian/section/world> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Section>.
+<http://www.example.org/guardian/section/world> <http://www.example.org/guardian/webTitle> "World news".
+<http://www.example.org/guardian/section/world> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/world".
+<http://www.example.org/guardian/section/world> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/world".
+<http://www.example.org/guardian/tag/football%2Fuefa-europa-league> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Tag>.
+<http://www.example.org/guardian/tag/football%2Fuefa-europa-league> <http://www.example.org/guardian/tagType> "keyword".
+<http://www.example.org/guardian/tag/football%2Fuefa-europa-league> <http://www.example.org/guardian/webTitle> "Europa League".
+<http://www.example.org/guardian/tag/football%2Fuefa-europa-league> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/football/uefa-europa-league".
+<http://www.example.org/guardian/tag/football%2Fuefa-europa-league> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/football/uefa-europa-league".
+<http://www.example.org/guardian/tag/2019-family-gift-guide%2F2019-family-gift-guide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Tag>.
+<http://www.example.org/guardian/tag/2019-family-gift-guide%2F2019-family-gift-guide> <http://www.example.org/guardian/tagType> "paid-content".
+<http://www.example.org/guardian/tag/2019-family-gift-guide%2F2019-family-gift-guide> <http://www.example.org/guardian/webTitle> "2019 family gift guide".
+<http://www.example.org/guardian/tag/2019-family-gift-guide%2F2019-family-gift-guide> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/2019-family-gift-guide/2019-family-gift-guide".
+<http://www.example.org/guardian/tag/2019-family-gift-guide%2F2019-family-gift-guide> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/2019-family-gift-guide/2019-family-gift-guide".
+<http://www.example.org/guardian/tag/a-shot-of-sustainability%2Fa-shot-of-sustainability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Tag>.
+<http://www.example.org/guardian/tag/a-shot-of-sustainability%2Fa-shot-of-sustainability> <http://www.example.org/guardian/tagType> "keyword".
+<http://www.example.org/guardian/tag/a-shot-of-sustainability%2Fa-shot-of-sustainability> <http://www.example.org/guardian/webTitle> "a shot of sustainability".
+<http://www.example.org/guardian/tag/a-shot-of-sustainability%2Fa-shot-of-sustainability> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/a-shot-of-sustainability/a-shot-of-sustainability".
+<http://www.example.org/guardian/tag/a-shot-of-sustainability%2Fa-shot-of-sustainability> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/a-shot-of-sustainability/a-shot-of-sustainability".
+<http://www.example.org/guardian/tag/about%2Ftest-tag--do-not-use-this-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Tag>.
+<http://www.example.org/guardian/tag/about%2Ftest-tag--do-not-use-this-> <http://www.example.org/guardian/tagType> "keyword".
+<http://www.example.org/guardian/tag/about%2Ftest-tag--do-not-use-this-> <http://www.example.org/guardian/webTitle> "Test Tag (DO NOT USE THIS)".
+<http://www.example.org/guardian/tag/about%2Ftest-tag--do-not-use-this-> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/about/test-tag--do-not-use-this-".
+<http://www.example.org/guardian/tag/about%2Ftest-tag--do-not-use-this-> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/about/test-tag--do-not-use-this-".
+<http://www.example.org/guardian/edition/global-development%2F2020%2Fdec%2F03%2Fyemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Edition>.
+<http://www.example.org/guardian/edition/global-development%2F2020%2Fdec%2F03%2Fyemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns> <http://www.example.org/guardian/webTitle> "Yemen 'one step away from famine' as donors dry up amid Covid, UN warns".
+<http://www.example.org/guardian/edition/global-development%2F2020%2Fdec%2F03%2Fyemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/global-development/2020/dec/03/yemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns".
+<http://www.example.org/guardian/edition/global-development%2F2020%2Fdec%2F03%2Fyemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/global-development/2020/dec/03/yemen-one-step-away-from-famine-as-donors-dry-up-amid-covid-un-warns".
+<http://www.example.org/guardian/edition/football%2F2020%2Fdec%2F03%2Fpremier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Edition>.
+<http://www.example.org/guardian/edition/football%2F2020%2Fdec%2F03%2Fpremier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much> <http://www.example.org/guardian/webTitle> "Premier League fans must wear masks, not sing too much and no hugging".
+<http://www.example.org/guardian/edition/football%2F2020%2Fdec%2F03%2Fpremier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/football/2020/dec/03/premier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much".
+<http://www.example.org/guardian/edition/football%2F2020%2Fdec%2F03%2Fpremier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/football/2020/dec/03/premier-league-fans-must-wear-masks-and-not-sing-or-chant-too-much".
+<https://nest.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Sponsor>.
+<https://nest.com/> <http://www.example.org/guardian/sponsorName> "Google".
+<https://nest.com/> <http://www.example.org/guardian/sponsorLogo> "https://static.theguardian.com/commercial/sponsor/11/Nov/2019/522e3225-cc9f-4aca-b779-1885b95b2241-GoogleNest_Logo_Horizontal-280 copy-v2.png".

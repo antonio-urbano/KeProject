@@ -1,0 +1,90 @@
+{
+    "response": {
+        "status": "ok",
+        "userTier": "developer",
+        "total": 75,
+        "results": [
+            {
+                "id": "about",
+                "webTitle": "About",
+                "webUrl": "https://www.theguardian.com/about",
+                "apiUrl": "https://content.guardianapis.com/about",
+                "editions": [
+                    {
+                        "id": "about",
+                        "webTitle": "About",
+                        "webUrl": "https://www.theguardian.com/about",
+                        "apiUrl": "https://content.guardianapis.com/about",
+                        "code": "default"
+                    }
+                ]
+            },
+            {
+                "id": "animals-farmed",
+                "webTitle": "Animals farmed",
+                "webUrl": "https://www.theguardian.com/animals-farmed",
+                "apiUrl": "https://content.guardianapis.com/animals-farmed",
+                "editions": [
+                    {
+                        "id": "animals-farmed",
+                        "webTitle": "Animals farmed",
+                        "webUrl": "https://www.theguardian.com/animals-farmed",
+                        "apiUrl": "https://content.guardianapis.com/animals-farmed",
+                        "code": "default"
+                    }
+                ]
+            },
+            {
+                "id": "travel",
+                "webTitle": "Travel",
+                "webUrl": "https://www.theguardian.com/travel",
+                "apiUrl": "https://content.guardianapis.com/travel",
+                "editions": [
+                    {
+                        "id": "travel",
+                        "webTitle": "Travel",
+                        "webUrl": "https://www.theguardian.com/travel",
+                        "apiUrl": "https://content.guardianapis.com/travel",
+                        "code": "default"
+                    },
+                    {
+                        "id": "au/travel",
+                        "webTitle": "Travel",
+                        "webUrl": "https://www.theguardian.com/au/travel",
+                        "apiUrl": "https://content.guardianapis.com/au/travel",
+                        "code": "au"
+                    },
+                    {
+                        "id": "uk/travel",
+                        "webTitle": "Travel",
+                        "webUrl": "https://www.theguardian.com/uk/travel",
+                        "apiUrl": "https://content.guardianapis.com/uk/travel",
+                        "code": "uk"
+                    },
+                    {
+                        "id": "us/travel",
+                        "webTitle": "Travel",
+                        "webUrl": "https://www.theguardian.com/us/travel",
+                        "apiUrl": "https://content.guardianapis.com/us/travel",
+                        "code": "us"
+                    }
+                ]
+            },
+            {
+                "id": "world",
+                "webTitle": "World news",
+                "webUrl": "https://www.theguardian.com/world",
+                "apiUrl": "https://content.guardianapis.com/world",
+                "editions": [
+                    {
+                        "id": "world",
+                        "webTitle": "World news",
+                        "webUrl": "https://www.theguardian.com/world",
+                        "apiUrl": "https://content.guardianapis.com/world",
+                        "code": "default"
+                    }
+                ]
+            }
+        ]
+    }
+}

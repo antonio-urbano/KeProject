@@ -1,0 +1,27 @@
+<http://www.example.org/guardian/tag/profile%2Fpeterbeaumont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Tag>.
+<http://www.example.org/guardian/tag/profile%2Fpeterbeaumont> <http://www.example.org/guardian/tagType> "contributor".
+<http://www.example.org/guardian/tag/profile%2Fpeterbeaumont> <http://www.example.org/guardian/webTitle> "Peter Beaumont".
+<http://www.example.org/guardian/tag/profile%2Fpeterbeaumont> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/profile/peterbeaumont".
+<http://www.example.org/guardian/tag/profile%2Fpeterbeaumont> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/profile/peterbeaumont".
+<http://www.example.org/guardian/tag/profile%2Fpeterbeaumont> <http://www.example.org/guardian/authorBio> "<p>Peter Beaumont is a senior reporter on the Guardian's Global Development desk. He has reported extensively from conflict zones including Africa, the Balkans and the Middle East and is the author of <a href=\"http://www.amazon.co.uk/Secret-Life-War-Journeys-Conflict/dp/1846551579/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1247138682&amp;sr=8-1\">The Secret Life of War: Journeys Through Modern Conflict</a></p>".
+<http://www.example.org/guardian/tag/profile%2Fpeterbeaumont> <http://www.example.org/guardian/authorFirstName> "Peter".
+<http://www.example.org/guardian/tag/profile%2Fpeterbeaumont> <http://www.example.org/guardian/authorLastName> "Beaumont".
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fglobal-development> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Tag>.
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fglobal-development> <http://www.example.org/guardian/tagType> "tracking".
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fglobal-development> <http://www.example.org/guardian/webTitle> "UK Global Development".
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fglobal-development> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/tracking/commissioningdesk/global-development".
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fglobal-development> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/tracking/commissioningdesk/global-development".
+<http://www.example.org/guardian/tag/profile%2Fseaningle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Tag>.
+<http://www.example.org/guardian/tag/profile%2Fseaningle> <http://www.example.org/guardian/tagType> "contributor".
+<http://www.example.org/guardian/tag/profile%2Fseaningle> <http://www.example.org/guardian/webTitle> "Sean Ingle".
+<http://www.example.org/guardian/tag/profile%2Fseaningle> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/profile/seaningle".
+<http://www.example.org/guardian/tag/profile%2Fseaningle> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/profile/seaningle".
+<http://www.example.org/guardian/tag/profile%2Fseaningle> <http://www.example.org/guardian/authorBio> "<p>Sean Ingle is the Guardian's chief sports reporter. Twitter&nbsp;<a href=\"https://twitter.com/seaningle\">@seaningle</a></p>".
+<http://www.example.org/guardian/tag/profile%2Fseaningle> <http://www.example.org/guardian/authorFirstName> "Sean ".
+<http://www.example.org/guardian/tag/profile%2Fseaningle> <http://www.example.org/guardian/authorLastName> "Ingle".
+<http://www.example.org/guardian/tag/profile%2Fseaningle> <http://www.example.org/guardian/authorTwitter> "seaningle".
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fuk-sport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/guardian/Tag>.
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fuk-sport> <http://www.example.org/guardian/tagType> "tracking".
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fuk-sport> <http://www.example.org/guardian/webTitle> "UK Sport".
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fuk-sport> <http://www.example.org/guardian/webUrl> "https://www.theguardian.com/tracking/commissioningdesk/uk-sport".
+<http://www.example.org/guardian/tag/tracking%2Fcommissioningdesk%2Fuk-sport> <http://www.example.org/guardian/apiUrl> "https://content.guardianapis.com/tracking/commissioningdesk/uk-sport".
