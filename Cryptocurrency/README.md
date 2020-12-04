@@ -2,7 +2,7 @@
 
 This ontology includes a set of classes and properties modelled for crypto currency market data.
 
-The data include the Price, volume, market cap, and rank for all currencies. It also change in cryptocurrency indicators calculated on an interval of 7 days. It also provides basic information about the cryptocurrencies. Details included in the data:
+The data include the Price, volume, market cap, and rank for all currencies. It also has change in cryptocurrency indicators calculated on an interval of 7 days. It also provides basic information about the cryptocurrencies. Details included in the data:
 
 Cryprocurrency data: currency name, id, status, price, price date, symbol, circulating_supply, max_supply, logo url, market cap, number of exchanges, number of pairs, number of pairs unmapped, first candle date, first trade date, first order book date, first price date, rank, rank delta, high, high timestamp.
 
@@ -25,7 +25,7 @@ crypto_output.rdf contains the genearated RDF triples in N-triple format. They c
 
 JENA MODEL: Starting from the RDF triples we build a Jena Model. The Main.java class also contains several queries that can be exuted over the model.
 
-SPARQL QUERIES: A set of queries which are meant to translate some competency questions that you can find in the following section have been implemented in the Main.java class. Furthermore the notebook CovidQueries.ipynb can be used to run the same queries. 
+SPARQL QUERIES: A set of queries which are meant to translate some competency questions that you can find in the following section have been implemented in the Main.java class. Furthermore the notebook crypto_query.ipynb can be used to run the same queries. 
 The Jupyter notebook docker stack was used to ceate the python notebook.
 The sparqk kernel was installed using : https://github.com/paulovn/sparql-kernel
 SPARQL endpoint was created using - Jena-Fuseki. 
