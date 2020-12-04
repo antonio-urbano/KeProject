@@ -21,7 +21,10 @@ crypto_output.rdf contains the genearated RDF triples in N-triple format. They c
 
 JENA MODEL: Starting from the RDF triples we build a Jena Model. The Main.java class also contains several queries that can be exuted over the model.
 
-SPARQL QUERIES: A set of queries which are meant to translate some competency questions that you can find in the following section have been implemented in the Main.java class. Furthermore the notebook CovidQueries.ipynb can be used to run the same queries. To use the notebook and run the queries you can self-host a SPARQL endpoint using Jena-Fuseki
+SPARQL QUERIES: A set of queries which are meant to translate some competency questions that you can find in the following section have been implemented in the Main.java class. Furthermore the notebook CovidQueries.ipynb can be used to run the same queries. 
+The Jupyter notebook docker stack was used to ceate the python notebook.
+The sparqk kernel was installed using : https://github.com/paulovn/sparql-kernel
+SPARQL endpoint was created using - Jena-Fuseki. 
 
 Competency Questions
 List all currencies with price above 5000 Euros
