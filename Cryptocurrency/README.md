@@ -1,6 +1,6 @@
 # Cryptocurrency Ontology
 
-This ontology includes a set of classes and properties able to model daily time-series data related to COVID-19 for over 20,000 distinct locations around the world. modelled for crypto currency market data.
+This ontology includes a set of classes and properties modelled for crypto currency market data.
 
 The data include the Price, volume, market cap, and rank for all currencies. It also change in cryptocurrency indicators calculated on an interval of 7 days. It also provides basic information about the cryptocurrencies. Details included in the data:
 
