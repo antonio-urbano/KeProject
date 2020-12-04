@@ -31,8 +31,8 @@ The sparqk kernel was installed using : https://github.com/paulovn/sparql-kernel
 SPARQL endpoint was created using - Jena-Fuseki. 
 
 ## Competency Questions
-List all currencies with price above 5000 Euros
-List all currencies with status active and rank delta value above 0.
-List all currencies with rank below 20
-List all currencies with number of exchanges above 100
-List all market cap, price and volume change in the last 7 days
+    - List all currencies with price above 5000 Euros
+    - List all currencies with status active and rank delta value above 0.
+    - List all currencies with rank below 20
+    - List all currencies with number of exchanges above 100
+    - List all market cap, price and volume change in the last 7 days
