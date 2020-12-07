@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#> .
+@prefix : <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -66,7 +66,7 @@
 
 ###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel
 <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Statistics> ;
+                                                                                 rdfs:domain schema:Place ;
                                                                                  rdfs:range [ rdf:type rdfs:Datatype ;
                                                                                               owl:onDatatype xsd:int ;
                                                                                               owl:withRestrictions ( [ xsd:minInclusive "0"^^xsd:int
@@ -319,19 +319,6 @@ schema:name rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CountryStatistics
-<http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CountryStatistics> rdf:type owl:Class ;
-                                                                                  owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics>
-                                                                                                                             [ rdf:type owl:Restriction ;
-                                                                                                                               owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
-                                                                                                                               owl:hasValue "0"^^xsd:int
-                                                                                                                             ]
-                                                                                                                           ) ;
-                                                                                                        rdf:type owl:Class
-                                                                                                      ] ;
-                                                                                  rdfs:subClassOf <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics> .
-
-
 ###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics
 <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics> rdf:type owl:Class ;
                                                                                 rdfs:subClassOf <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Statistics> ,
@@ -408,58 +395,40 @@ schema:name rdf:type owl:DatatypeProperty ;
 
 ###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Locality
 <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Locality> rdf:type owl:Class ;
-                                                                         rdfs:subClassOf schema:Place .
-
-
-###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LocalityStatistics
-<http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/LocalityStatistics> rdf:type owl:Class ;
-                                                                                   owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics>
-                                                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                                                owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
-                                                                                                                                owl:hasValue "3"^^xsd:int
-                                                                                                                              ]
-                                                                                                                            ) ;
-                                                                                                         rdf:type owl:Class
-                                                                                                       ] ;
-                                                                                   rdfs:subClassOf <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics> .
+                                                                         rdfs:subClassOf [ owl:intersectionOf ( schema:Place
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
+                                                                                                                  owl:hasValue "3"^^xsd:int
+                                                                                                                ]
+                                                                                                              ) ;
+                                                                                           rdf:type owl:Class
+                                                                                         ] .
 
 
 ###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Province
 <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Province> rdf:type owl:Class ;
                                                                          owl:equivalentClass <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion2> ;
-                                                                         rdfs:subClassOf schema:Place .
-
-
-###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/ProvinceStatistics
-<http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/ProvinceStatistics> rdf:type owl:Class ;
-                                                                                   owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics>
-                                                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                                                owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
-                                                                                                                                owl:hasValue "2"^^xsd:int
-                                                                                                                              ]
-                                                                                                                            ) ;
-                                                                                                         rdf:type owl:Class
-                                                                                                       ] ;
-                                                                                   rdfs:subClassOf <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics> .
+                                                                         rdfs:subClassOf [ owl:intersectionOf ( schema:Place
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
+                                                                                                                  owl:hasValue "2"^^xsd:int
+                                                                                                                ]
+                                                                                                              ) ;
+                                                                                           rdf:type owl:Class
+                                                                                         ] .
 
 
 ###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Region
 <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Region> rdf:type owl:Class ;
                                                                        owl:equivalentClass <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion1> ;
-                                                                       rdfs:subClassOf schema:Place .
-
-
-###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/RegionStatistics
-<http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/RegionStatistics> rdf:type owl:Class ;
-                                                                                 owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics>
-                                                                                                                            [ rdf:type owl:Restriction ;
-                                                                                                                              owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
-                                                                                                                              owl:hasValue "1"^^xsd:int
-                                                                                                                            ]
-                                                                                                                          ) ;
-                                                                                                       rdf:type owl:Class
-                                                                                                     ] ;
-                                                                                 rdfs:subClassOf <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/CovidStatistics> .
+                                                                       rdfs:subClassOf [ owl:intersectionOf ( schema:Place
+                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
+                                                                                                                owl:hasValue "1"^^xsd:int
+                                                                                                              ]
+                                                                                                            ) ;
+                                                                                         rdf:type owl:Class
+                                                                                       ] .
 
 
 ###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Statistics
@@ -468,12 +437,26 @@ schema:name rdf:type owl:DatatypeProperty ;
 
 ###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion1
 <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion1> rdf:type owl:Class ;
-                                                                           rdfs:subClassOf schema:Place .
+                                                                           rdfs:subClassOf [ owl:intersectionOf ( schema:Place
+                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
+                                                                                                                    owl:hasValue "1"^^xsd:int
+                                                                                                                  ]
+                                                                                                                ) ;
+                                                                                             rdf:type owl:Class
+                                                                                           ] .
 
 
 ###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion2
 <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/Subregion2> rdf:type owl:Class ;
-                                                                           rdfs:subClassOf schema:Place .
+                                                                           rdfs:subClassOf [ owl:intersectionOf ( schema:Place
+                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
+                                                                                                                    owl:hasValue "2"^^xsd:int
+                                                                                                                  ]
+                                                                                                                ) ;
+                                                                                             rdf:type owl:Class
+                                                                                           ] .
 
 
 ###  http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/WeatherStatistics
@@ -483,7 +466,15 @@ schema:name rdf:type owl:DatatypeProperty ;
 
 ###  https://schema.org/Country
 schema:Country rdf:type owl:Class ;
-               rdfs:subClassOf schema:Place .
+               rdfs:subClassOf schema:Place ,
+                               [ owl:intersectionOf ( schema:Place
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid/aggregationLevel> ;
+                                                        owl:hasValue "0"^^xsd:int
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] .
 
 
 ###  https://schema.org/Place

@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid">
-    <Prefix name="" IRI="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/antonio_2/ontologies/2020/10/covid"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -14,9 +14,6 @@
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="schema" IRI="https://schema.org/"/>
-    <Declaration>
-        <Class IRI="/CountryStatistics"/>
-    </Declaration>
     <Declaration>
         <Class IRI="/CovidStatistics"/>
     </Declaration>
@@ -27,19 +24,10 @@
         <Class IRI="/Locality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/LocalityStatistics"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Province"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ProvinceStatistics"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Region"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/RegionStatistics"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Statistics"/>
@@ -210,57 +198,13 @@
         <NamedIndividual IRI="#Male"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="/CountryStatistics"/>
-        <ObjectIntersectionOf>
-            <Class IRI="/CovidStatistics"/>
-            <DataHasValue>
-                <DataProperty IRI="/aggregationLevel"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="/LocalityStatistics"/>
-        <ObjectIntersectionOf>
-            <Class IRI="/CovidStatistics"/>
-            <DataHasValue>
-                <DataProperty IRI="/aggregationLevel"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="/Province"/>
         <Class IRI="/Subregion2"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="/ProvinceStatistics"/>
-        <ObjectIntersectionOf>
-            <Class IRI="/CovidStatistics"/>
-            <DataHasValue>
-                <DataProperty IRI="/aggregationLevel"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="/Region"/>
         <Class IRI="/Subregion1"/>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="/RegionStatistics"/>
-        <ObjectIntersectionOf>
-            <Class IRI="/CovidStatistics"/>
-            <DataHasValue>
-                <DataProperty IRI="/aggregationLevel"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="/CountryStatistics"/>
-        <Class IRI="/CovidStatistics"/>
-    </SubClassOf>
     <SubClassOf>
         <Class IRI="/CovidStatistics"/>
         <Class IRI="/Statistics"/>
@@ -383,35 +327,53 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Locality"/>
-        <Class abbreviatedIRI="schema:Place"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/LocalityStatistics"/>
-        <Class IRI="/CovidStatistics"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="schema:Place"/>
+            <DataHasValue>
+                <DataProperty IRI="/aggregationLevel"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Province"/>
-        <Class abbreviatedIRI="schema:Place"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ProvinceStatistics"/>
-        <Class IRI="/CovidStatistics"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="schema:Place"/>
+            <DataHasValue>
+                <DataProperty IRI="/aggregationLevel"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Region"/>
-        <Class abbreviatedIRI="schema:Place"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/RegionStatistics"/>
-        <Class IRI="/CovidStatistics"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="schema:Place"/>
+            <DataHasValue>
+                <DataProperty IRI="/aggregationLevel"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Subregion1"/>
-        <Class abbreviatedIRI="schema:Place"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="schema:Place"/>
+            <DataHasValue>
+                <DataProperty IRI="/aggregationLevel"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Subregion2"/>
-        <Class abbreviatedIRI="schema:Place"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="schema:Place"/>
+            <DataHasValue>
+                <DataProperty IRI="/aggregationLevel"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/WeatherStatistics"/>
@@ -420,6 +382,16 @@
     <SubClassOf>
         <Class abbreviatedIRI="schema:Country"/>
         <Class abbreviatedIRI="schema:Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Country"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="schema:Place"/>
+            <DataHasValue>
+                <DataProperty IRI="/aggregationLevel"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="schema:Place"/>
@@ -619,7 +591,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/aggregationLevel"/>
-        <Class IRI="/Statistics"/>
+        <Class abbreviatedIRI="schema:Place"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/avg_temp"/>

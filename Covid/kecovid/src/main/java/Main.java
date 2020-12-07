@@ -54,7 +54,7 @@ public class Main {
                             "?place a <https://schema.org/Place>. " +
                             "?statistics <http://www.example.org/covid/statisticsOf> ?place." +
                             "?statistics <http://www.example.org/covid/date> ?date." +
-                            "?statistics <http://www.example.org/covid/aggregationLevel> ?al." +
+                            "?place <http://www.example.org/covid/aggregationLevel> ?al." +
                             "?statistics <http://www.example.org/covid/new_confirmed> ?new_confirmed." +
                             "FILTER (?new_confirmed > \"2000\"^^<http://www.w3.org/2001/XMLSchema#integer>)." +
                             "FILTER (?al >= \"2\"^^<http://www.w3.org/2001/XMLSchema#integer>).}";
@@ -73,7 +73,7 @@ public class Main {
                     "WHERE{ ?subregion2 a <https://schema.org/Place>. " +
                             "?subregion2 <https://schema.org/name> ?region_name." +
                             "?statistics <http://www.example.org/covid/statisticsOf> ?subregion2." +
-                            "?statistics <http://www.example.org/covid/aggregationLevel> \"2\"^^<http://www.w3.org/2001/XMLSchema#integer>." +
+                            "?subregion2 <http://www.example.org/covid/aggregationLevel> \"2\"^^<http://www.w3.org/2001/XMLSchema#integer>." +
                             "?statistics <http://www.example.org/covid/new_deceased> ?new_deceased." +
                             "?statistics <http://www.example.org/covid/date> ?date." +
                             "?subregion2 <http://www.example.org/covid/population> ?population." +
@@ -94,7 +94,7 @@ public class Main {
                     "WHERE{ ?country a <https://schema.org/Place>. " +
                             "?statistics <http://www.example.org/covid/statisticsOf> ?country." +
                             "?statistics <http://www.example.org/covid/date> ?date." +
-                            "?statistics <http://www.example.org/covid/aggregationLevel> \"0\"^^<http://www.w3.org/2001/XMLSchema#integer>." +
+                            "?country <http://www.example.org/covid/aggregationLevel> \"0\"^^<http://www.w3.org/2001/XMLSchema#integer>." +
                             "?statistics <http://www.example.org/covid/total_confirmed> ?total_confirmed." +
                             "FILTER (?total_confirmed > \"2000000\"^^<http://www.w3.org/2001/XMLSchema#integer>).}";
         Query query4 = QueryFactory.create(q4);
@@ -106,14 +106,15 @@ public class Main {
 
         //-------------------------------------------------------
 
-        System.out.println("New deceased and new confirmed of all the countries having a min temp<-10° or a max temp>+35°");
+        System.out.println("New deceased, new confirmed and new recovered of all the countries having a min temp<-10° or a max temp>+35°");
 
-        String q5 = "SELECT ?country ?new_deceased ?new_confirmed (STR(?date) AS ?Date) ?max_temp ?min_temp " +
+        String q5 = "SELECT ?country ?new_deceased ?new_confirmed ?new_recovered (STR(?date) AS ?Date) ?max_temp ?min_temp " +
                     "WHERE{ ?country a <https://schema.org/Place>. " +
                             "?statistics <http://www.example.org/covid/statisticsOf> ?country." +
-                            "?statistics <http://www.example.org/covid/aggregationLevel> \"0\"^^<http://www.w3.org/2001/XMLSchema#integer>." +
+                            "?country <http://www.example.org/covid/aggregationLevel> \"0\"^^<http://www.w3.org/2001/XMLSchema#integer>." +
                             "?statistics <http://www.example.org/covid/new_deceased> ?new_deceased." +
                             "?statistics <http://www.example.org/covid/new_confirmed> ?new_confirmed." +
+                            "?statistics <http://www.example.org/covid/new_recovered> ?new_recovered." +
                             "?statistics <http://www.example.org/covid/date> ?date." +
                             "?weather <http://www.example.org/covid/weatherOf> ?country." +
                             "?weather <http://www.example.org/covid/date> ?date." +
