@@ -10,7 +10,6 @@ mappings:
     po:
       - [a, covid:CovidStatistics]
       - [covid:date, $(date)]
-      - [covid:aggregationLevel, $(aggregation_level), xsd:integer]
       - [covid:current_hospitalized, $(current_hospitalized), xsd:integer]
       - [covid:current_intensiveCare, $(current_intensive_care), xsd:integer]
       - [covid:new_confirmed, $(new_confirmed), xsd:integer]
@@ -46,6 +45,7 @@ mappings:
       - [a, schema:Place]
       - [covid:code, $(country_code) $(subregion1_code) $(subregion2_code) $(locality_code)]
       - [schema:name, $(country_name) $(subregion1_name) $(subregion2_name) $(locality_name)]
+      - [covid:aggregationLevel, $(aggregation_level), xsd:integer]
       - [schema:latitude, $(latitude)]
       - [schema:longitude, $(longitude)]
       - [covid:population, $(population), xsd:integer]
@@ -60,7 +60,6 @@ mappings:
     po:
       - [a, covid:LifestyleStatistics]
       - [covid:date, $(date)]
-      - [covid:aggregationLevel, $(aggregation_level), xsd:integer]
       - [covid:pollution_mortality_rate, $(pollution_mortality_rate), xsd:decimal]
       - [covid:life_expectancy, $(life_expectancy), xsd:integer]
       - [covid:infant_mortality_rate, $(infant_mortality_rate), xsd:decimal]
@@ -83,7 +82,6 @@ mappings:
     po:
       - [a, covid:WeatherStatistics]
       - [covid:date, $(date)]
-      - [covid:aggregationLevel, $(aggregation_level), xsd:integer]
       - [covid:avg_temp, $(average_temperature), xsd:decimal]
       - [covid:min_temp, $(minimum_temperature), xsd:decimal]
       - [covid:max_temp, $(maximum_temperature), xsd:decimal]
